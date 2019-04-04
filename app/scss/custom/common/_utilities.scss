@@ -1,0 +1,91 @@
+/* utilities.scss */
+
+.shadow-bottom {
+  -webkit-box-shadow: 0px 2px 6px 0.5px #e9edf1;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0px 2px 6px 0.5px #e9edf1;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0px 2px 6px 0.5px #e9edf1;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.total-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.muted {
+  opacity: 0.5;
+}
+
+.font-weight-bolder {
+  font-weight: $font-weight-bolder;
+}
+.font-weight-medium {
+  font-weight: $font-weight-medium;
+}
+
+.line-height-s {
+  line-height: 20px;
+}
+.line-height-m {
+  line-height: normal;
+}
+.line-height-initial {
+  line-height: initial;
+}
+
+.letter-spacing-s{
+  letter-spacing: 0.3px;
+}
+.letter-spacing-xs{
+  letter-spacing: 0.15px;
+}
+.letter-spacing-md{
+  letter-spacing: 0.5px;
+}
+.letter-spacing-lg{
+  letter-spacing: 0.8px;
+}
+
+.height {
+  &.extra-xxs {
+    height: 15px;
+  }
+  &.xxs {
+    height: 20px;
+  }
+  &.xs {
+    height: 25px;
+  }
+  &.sm {
+    height: 30px;
+  }
+  &.lg {
+    height: 35px;
+  }
+  &.extra-lg {
+    height: 45px;
+  }
+}
+
+.overflow-scroll{
+  overflow-y: auto;
+}
+.pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+.no-pointer {
+  cursor: not-allowed;
+}
+
+.nowrap-text {
+  white-space: nowrap;
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}

@@ -1,0 +1,37 @@
+/* menu.scss */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  padding: 1em 5em;
+  &__logo {
+    height: 20px;
+  }
+  &__links-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__links {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.01em;
+    color: #828282;
+    padding: 0 1em;
+  }
+  .btn {
+    width: 92px;
+    height: 26px;
+    border-radius: 20px;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: normal;
+    color: #01B0F0;
+    border-color: #01B0F0;
+  }
+}
