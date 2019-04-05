@@ -9788,6 +9788,7 @@ html, body {
 
 .main-container {
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto; }
 
@@ -9912,21 +9913,21 @@ html, body {
 /* components.scss */
 /* views.scss */
 /* landing.scss */
-.banner-frontpage {
+.banner-landing {
   height: 100vh;
   width: 100%;
   background-image: url("../img/landing/robotic-hands/robotic-hands-1440.png"); }
 
-.banner-frontpage .banner__text-cont {
+.banner-landing .banner__text-cont {
   margin: 10em 5em 0 5em; }
 
-.banner-frontpage .banner__title {
+.banner-landing .banner__title {
   font-family: 'Roboto Condensed';
   font-size: 45px;
   letter-spacing: .3px;
   color: #F2F2F2; }
 
-.banner-frontpage .banner__subtitle {
+.banner-landing .banner__subtitle {
   font-family: 'Roboto';
   font-weight: 100;
   letter-spacing: 1px;
@@ -10208,3 +10209,78 @@ html, body {
 
 .banner-map .banner-map__img-cont img {
   margin-left: 15%; }
+
+/* video-expertise.scss */
+.banner-videoexpertise {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: black; }
+
+.banner-videoexpertise .banner-videoexpertise__img {
+  background: grey;
+  width: 55%; }
+
+.banner-videoexpertise .banner-videoexpertise__text {
+  width: 45%; }
+
+.banner-videoexpertise .banner-videoexpertise__text header {
+  max-width: 65%; }
+
+.banner-videoexpertise .banner-videoexpertise__text h1 {
+  font-family: 'Signika';
+  font-weight: bold;
+  font-size: 45px;
+  line-height: normal;
+  color: #F2F2F2;
+  margin-bottom: .2em; }
+
+.banner-videoexpertise .banner-videoexpertise__text p {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-size: 15px;
+  line-height: normal;
+  color: #00B3EB;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.banner-cnv {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.banner-cnv > div {
+  padding: 4em 2em; }
+
+.banner-cnv .banner-cnv__text {
+  width: 45%;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex; }
+
+.banner-cnv .banner-cnv__text .banner-cnv__text-wrapper {
+  max-width: 60%; }
+
+.banner-cnv .banner-cnv__text h2 {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 38px;
+  line-height: normal;
+  color: #F2F2F2; }
+
+.banner-cnv .banner-cnv__text p {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  color: #F2F2F2; }
+
+.banner-cnv .banner-cnv__img {
+  width: 55%; }
+
+.banner-cnv .banner-cnv__img img {
+  height: 210px; }
