@@ -1,4 +1,6 @@
 /* video-expertise.scss */
+$lightpainting-width: 372px;
+$left-aligment: 260px;
 .banner-videoexpertise {
   height: 600px;
   width: 100%;
@@ -7,8 +9,12 @@
   align-items: center;
   background: black;
   .banner-videoexpertise__img {
-    background: grey;
+    background: black;
     width: 55%;
+    padding-left: $left-aligment;
+    img {
+      width: $lightpainting-width;
+    }
   }
   .banner-videoexpertise__text {
     width: 45%;
@@ -38,38 +44,200 @@
   background-color: black;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  > div {
-    padding: 4em 2em;
-  }
-  .banner-cnv__text {
+  // align-items: center;
+  padding-left: $left-aligment;
+  .banner-cnv__text-cont {
     width: 45%;
-    justify-content: flex-end;
-    align-items: center;
     display: flex;
     .banner-cnv__text-wrapper {
-      max-width: 60%;
+      max-width: $lightpainting-width + 20px;
     }
     h2 {
       font-family: 'Open Sans';
+      letter-spacing: .01em;
       font-weight: bold;
-      font-size: 38px;
-      line-height: normal;
+      font-size: 40px;
+      letter-spacing: .02em;
       color: #F2F2F2;
+      margin-bottom: .5em;
+    }
+    p {
+      font-family: 'Roboto';
+      font-weight: lighter;
+      font-size: 20px;
+      line-height: 29px;
+      letter-spacing: .08em;
+      color: #F2F2F2;
+      max-width: 321px;
+      margin-bottom: 1em;
+    }
+    ul {
+      font-family: 'Roboto';
+      font-weight: lighter;
+      font-size: 14px;
+      line-height: 25px;
+      letter-spacing: 0.04em;
+      color: #BDBDBD;
+      margin-bottom: 10px;
+    }
+  }
+  .banner-cnv__img-cont {
+    width: 55%;
+    img {
+      height: 200px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.banner-advantages {
+  background-color: #00B3EB;
+  padding: 4em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .banner-advantages__items-wrapper {
+    flex-direction: row;
+    display: flex;
+  }
+  .banner-advantages__items {
+    max-width: 155px;
+    margin: 0 60px;
+    * {
+      display: block;
+    }
+    img {
+      height: 60px;
+      margin-bottom: 20px;
+    }
+    span {
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.07em;
+      margin-bottom: 20px;
+      color: white;
     }
     p {
       font-family: 'Open Sans';
-      font-weight: 300;
+      font-weight: lighter;
       font-size: 16px;
-      line-height: 38px;
-      letter-spacing: 0.02em;
-      color: #F2F2F2;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+      color: white;
     }
   }
-  .banner-cnv__img {
-    width: 55%;
-    img {
-      height: 210px;
-    }
+}
+.banner-slogan-ve {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 4em 6em;
+  .banner-slogan-ve__claim {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 15px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    color: #00B3EB;
+    letter-spacing: .05em;
   }
+  .banner-slogan-ve__text {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 25px;
+    line-height: 69px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: white;
+  }
+}
+.banner-advanced {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  .banner-advanced__column-1 {
+    background-color: #F2994A;
+    width: 66%;
+    padding: 30px;
+  }
+  .banner-advanced__column-2 {
+    width: 33%;
+    padding: 30px;
+  }
+  .banner-advanced__header-wrapper {
+      span {
+          font-family: 'Roboto';
+          font-weight: bold;
+          font-size: 22px;
+          line-height: normal;
+          text-transform: uppercase;
+          font-variant: small-caps;
+          color: white;
+      }
+      p {
+        font-family: 'Open Sans Condensed';
+        font-weight: 300;
+        font-size: 32px;
+        line-height: normal;
+        letter-spacing: 0.02em;
+        color: white;
+      }
+    }
+    .banner-advanced__list-wrapper {
+      .banner-advanced__column-2-__title {
+        color: #4F4F4F;
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: normal;
+        margin-bottom: 20px;
+        display: block;
+      }
+      li {
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 33px;
+        letter-spacing: 0.04em;
+        color: #4F4F4F;
+      }
+      .color-orange {
+        color: #F2994A;
+      }
+    }
+}
+.banner-computervision {
+  width: 100%;
+  background: url('../img/video-expertise/circle-long-angle_horzontal_1920.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  .banner-computervision__text-wrapper {
+    padding-left: 58%;
+    padding-top: 50px;
+  }
+  .banner-computervision__title {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 34px;
+    line-height: normal;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: .02em;
+  }
+  .banner-computervision__text {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: white;
+    max-width: 400px;
+    margin-bottom: 30px;
+    letter-spacing: .08em;
+  }
+
 }
