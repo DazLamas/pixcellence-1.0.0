@@ -16,9 +16,9 @@
         <img src="app/img/logo-pixcellence.png" alt="logo pixcellence" class="menu__logo">
         <ul class="menu__links-container">
           <li class="menu__links">
-            <a href="#">Machine Learning</a></li>
+            <a href="app/views/machine-learning.html" class="primary-link">Machine Learning</a></li>
           <li class="menu__links">
-            <a href="#">Video Expertise</a></li>
+            <a href="app/views/video-expertise.html" class="primary-link">Video Expertise</a></li>
           <li class="menu__links">
             <button type="button" name="button" class="btn btn-outline-primary">Get in touch</button>
           </li>
@@ -97,7 +97,7 @@
             <p>AI sensors</p>
           </li>
           <li>
-            <p><a href="#">Learn more ></a></p>
+            <p><a href="app/views/machine-learning.html" class="underline-link">Learn more ></a></p>
           </li>
         </ul>
     </div>
@@ -108,14 +108,14 @@
         </div>
         <div class="banner-imageprocess__text">
           <h2>Image Processing</h2>
-          <span>Simply the best</span>
+          <span class="subtitle">Simply the best</span>
           <ul>
-            <li>•  Color Night Vision for the only true security camera </li>
+            <li>•  <span class="font-weight-normal">Color Night Vision</span> for the only true security camera </li>
             <li>•  Highest Quality Video </li>
-            <li>•  Field proven Computer Vision Motion Sensing </li>
+            <li>•  Field proven <span class="font-weight-normal">Computer Vision </span>Motion Sensing </li>
             <li>•  360 degree imagery </li>
           </ul>
-          <button type="button" name="button" class="btn btn-outline-orange">Learn more</button>
+          <a href="app/views/video-expertise.html" class="btn btn-outline-orange">Learn more</a>
         </div>
       </div>
       <div class="column-2">
@@ -125,15 +125,21 @@
             <span>Next Driving Era</span>
           </header>
           <ul>
-            <li><button type="button" name="button" class="btn btn-light">Watch video</button></li>
-            <li><button type="button" name="button" class="btn btn-outline-light">Learn more</button></li>
+            <li>
+              <button type="button" name="button" class="btn btn-outline-light banner-semantic__video-btn hover-shadow" onclick="videoplayerOpen();">
+              <img src="app/img/landing/004-play-button-3.png" alt="">
+              <span>Watch video</span>
+              </button>
+              </li>
+            <!-- <li><button type="button" name="button" class="btn btn-outline-light">Learn more</button></li> -->
           </ul>
         </div>
         <div class="banner-homehub">
           <header>
             <h2>Home <br>Monitoring</h2>
             <span>Protect your People</span>
-            <button type="button" name="button" class="btn btn-outline-primary">Learn more</button>
+            <p>with SmartAlerts&trade;&#153;</p>
+            <!-- <button type="button" name="button" class="btn btn-outline-primary">Learn more</button> -->
           </header>
         </div>
       </div>
@@ -156,6 +162,14 @@
       <button type="button" name="button" class="btn btn-primary">Get in touch</button>
     </div>
   </div>
+  <div id="videoplayer">
+    <a class="boxclose" id="boxclose" onclick="videoplayerClose();"></a>
+    <video id="video-cont" width="600" controls>
+        <source src="app/img/landing/semantinc-segmentatioc-video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div id="close-bnt" onClick="lightbox_close();"></div>
   <footer>
     footer
   </footer>
@@ -163,5 +177,6 @@
   <script src="app/js/vendor/jquery-3.2.1.min.js"></script>
   <script src="app/js/vendor/popper.min.js"></script>
   <script src="app/js/vendor/bootstrap.min.js"></script>
+  <script src="app/js/utilities.js"></script>
 </body>
 </html>

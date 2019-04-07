@@ -162,12 +162,21 @@ $left-aligment: 260px;
     background-color: #F2994A;
     width: 66%;
     padding: 30px;
+    display: flex;
+    flex-direction: row;
+    // background-image: url('../img/video-expertise/girl-light-blackBG.png');
   }
   .banner-advanced__column-2 {
     width: 33%;
     padding: 30px;
   }
+  .banner-advanced__img {
+    height: 300px;
+    margin-top: 30px;
+  }
   .banner-advanced__header-wrapper {
+    margin-top: 40px;
+    margin-left: 40px;
       span {
           font-family: 'Roboto';
           font-weight: bold;

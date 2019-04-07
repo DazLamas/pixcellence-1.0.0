@@ -83,7 +83,8 @@
   height: auto;
   display: inline-flex;
   flex-direction: row;
-  background-color: black;
+  background-image: url('../img/landing/circle-long-angle-1500_edge.jpg');
+  background-repeat: no-repeat;
   .banner-machinelearning__header {
     width: 38%;
     justify-content: flex-start;
@@ -160,7 +161,7 @@
     color: #333333;
     line-height: 53px;
   }
-  span {
+  .subtitle {
     font-family: 'Open Sans';
     font-size: 24px;
     color: #F2994A;
@@ -171,11 +172,11 @@
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 18px;
-    letter-spacing: 0.02em;
     color: #000000;
     margin-bottom: 1.5em;
     li {
-      line-height: 22px;
+      letter-spacing: 0.02em;
+      line-height: 28px;
       margin-bottom: 1em;
     }
   }
@@ -210,6 +211,15 @@
     .btn {
       margin: 0 10px;
     }
+    .banner-semantic__video-btn {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      img {
+        height: 25px;
+        margin-right: 10px;
+      }
+    }
   }
 }
 .banner-homehub {
@@ -237,7 +247,13 @@
     letter-spacing: -0.02em;
     color: #2F80ED;
     display: block;
-    margin-bottom: 1em;
+    // margin-bottom: 1em;
+  }
+  p{
+    font-family: 'Roboto';
+    font-weight: 200;
+    font-size: 18px;
+    color: $almost-black;
   }
 }
 .banner-slogan {
