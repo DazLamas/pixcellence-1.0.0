@@ -20,7 +20,7 @@
           <li class="menu__links">
             <a href="app/views/video-expertise.html" class="primary-link">Video Expertise</a></li>
           <li class="menu__links">
-            <button type="button" name="button" class="btn btn-outline-primary">Get in touch</button>
+            <button type="button" name="button" class="btn btn-outline-primary"  data-toggle="modal" data-target="#contactForm">Get in touch</button>
           </li>
         </ul>
       </nav>
@@ -53,11 +53,11 @@
           </li>
           <li>
             <h4>Embedded <br>  Software</h4>
-            <p class="text-danger">Need some drafted text for this one</p>
+            <!-- <p class="text-danger">Need some drafted text for this one</p> -->
           </li>
           <li>
             <h4>Mechanical <br>  Design</h4>
-            <p class="text-danger">Need some drafted text for this one</p>
+            <!-- <p class="text-danger">Need some drafted text for this one</p> -->
           </li>
           <li>
             <h4>Homologation <br> &Certification</h4>
@@ -138,7 +138,7 @@
           <header>
             <h2>Home <br>Monitoring</h2>
             <span>Protect your People</span>
-            <p>with SmartAlerts&trade;&#153;</p>
+            <p>with SmartAlerts&trade;</p>
             <!-- <button type="button" name="button" class="btn btn-outline-primary">Learn more</button> -->
           </header>
         </div>
@@ -158,9 +158,6 @@
         <img src="app/img/landing/map_freepik-576.PNG" alt="pixcellence offices worldmap">
       </div>
     </div>
-    <div class="banner-slogan total-center">
-      <button type="button" name="button" class="btn btn-primary">Get in touch</button>
-    </div>
   </div>
   <div id="videoplayer">
     <a class="boxclose" id="boxclose" onclick="videoplayerClose();"></a>
@@ -168,11 +165,110 @@
         <source src="app/img/landing/semantinc-segmentatioc-video.mp4" type="video/mp4">
     </video>
   </div>
-
   <div id="close-bnt" onClick="lightbox_close();"></div>
-  <footer>
-    footer
+
+  <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="contactFormLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactFormLabel">Get it Touch</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="../../contact.php" method="post">
+          <div class="form-group">
+            <label for="name" class="col-form-label">Name:</label>
+            <input type="text" class="form-control" name="name" required="">
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-form-label">E-mail:</label>
+            <input type="email" class="form-control" name="email" required="">
+          </div>
+          <div class="form-group">
+            <label for="message" class="col-form-label">Message:</label>
+            <textarea class="form-control" name="message" required=""></textarea>
+          </div>
+          <input type="submit" value="Send message" class="btn btn-outline-primary">
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<footer class="page-footer">
+  <div class="banner-slogan total-center">
+    <button type="button" name="button" class="btn btn-primary"  data-toggle="modal" data-target="#contactForm">Get in touch</button>
+  </div>
+
+    <div class="container text-center text-md-left mt-5">
+
+
+      <div class="row mt-3 dark-grey-text">
+
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+          <h6 class="text-uppercase font-weight-bold text-dark">Pixcellence Inc.</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto">
+          <p class="font-weight-light">Pixcellence, head quartered in San Diego, USA develops exciting new wireless and video consumer products such as Wireless video Doorbell and various niche consumer camera products. </p>
+
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+
+          <h6 class="text-uppercase font-weight-bold text-dark">San Diego, USA</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto">
+          <p class="dark-grey-text font-weight-light">7420 Carroll Rd.</p>
+          <p class="dark-grey-text font-weight-light">San Diego CA 91121</p>
+          <p class="dark-grey-text">Phone 90 203020</p>
+          <p class="text-primary font-weight-light">sales@pixcellence.com</p>
+
+
+        </div>
+
+
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold text-dark">Bangalore, India</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto">
+
+          <p class="dark-grey-text font-weight-light">Phone 9972763005</p>
+          <p class="dark-grey-text">+91-80-43943005</p>
+          <p class="dark-grey-text text-primary font-weight-light">sales@pixcellence.com</p>
+
+        </div>
+
+
+
+        <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-md-0 mb-4">
+
+
+          <h6 class="text-uppercase font-weight-bold text-dark">Madrid, Spain</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto">
+          <p class="dark-grey-text font-weight-light">Pixcellence AI</p>
+          <p class="dark-grey-text text-primary font-weight-light" href="#!">sales@pixcellence.com</p>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-copyright text-center text-black-50 py-3">© 2019 Copyright:
+      All Rights Reserved Pixcellence Inc.
+    </div>
+
+
   </footer>
+
 
   <script src="app/js/vendor/jquery-3.2.1.min.js"></script>
   <script src="app/js/vendor/popper.min.js"></script>

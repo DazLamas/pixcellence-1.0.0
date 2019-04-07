@@ -13,14 +13,14 @@
 <body>
   <div class="main-container">
     <nav class="menu position-fixed">
-        <img src="../img/logo-pixcellence.png" alt="logo pixcellence" class="menu__logo">
+        <a href="../../index.html"><img src="../img/logo-pixcellence.png" alt="logo pixcellence" class="menu__logo"></a>
         <ul class="menu__links-container">
           <li class="menu__links">
             <a href="machine-learning.html" class="primary-link">Machine Learning</a></li>
           <li class="menu__links">
             <a href="video-expertise.html" class="primary-link">Video Expertise</a></li>
           <li class="menu__links">
-            <button type="button" name="button" class="btn btn-outline-primary">Get in touch</button>
+            <button type="button" name="button" class="btn btn-outline-primary"  data-toggle="modal" data-target="#contactForm">Get in touch</button>
           </li>
         </ul>
       </nav>
@@ -80,7 +80,7 @@
         </div>
       </div>
     </section>
-    <section class="banner-pixc-claim">
+    <section class="banner-pixc-claim bg-light">
       <span class="title">pixcellence</span>
       <p class="text">There are video companies and AI companies but we are <span class="font-weight-normal">uniquely best of breed in both </span></p>
     </section>
@@ -126,8 +126,108 @@
       </div>
 
     </section>
-  <footer>
-    footer
+
+    <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="contactFormLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactFormLabel">Get it Touch</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="../../contact.php" method="post">
+          <div class="form-group">
+            <label for="name" class="col-form-label">Name:</label>
+            <input type="text" class="form-control" name="name" required="">
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-form-label">E-mail:</label>
+            <input type="email" class="form-control" name="email" required="">
+          </div>
+          <div class="form-group">
+            <label for="message" class="col-form-label">Message:</label>
+            <textarea class="form-control" name="message" required=""></textarea>
+          </div>
+          <input type="submit" value="Send message" class="btn btn-outline-primary">
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="page-footer">
+
+  <div class="banner-slogan total-center">
+    <button type="button" name="button" class="btn btn-primary"  data-toggle="modal" data-target="#contactForm">Get in touch</button>
+  </div>
+    <div class="container text-center text-md-left mt-5">
+
+
+      <div class="row mt-3 dark-grey-text">
+
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+          <h6 class="text-uppercase font-weight-bold text-dark">Pixcellence Inc.</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto">
+          <p class="font-weight-light">Pixcellence, head quartered in San Diego, USA develops exciting new wireless and video consumer products such as Wireless video Doorbell and various niche consumer camera products. </p>
+
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+
+          <h6 class="text-uppercase font-weight-bold text-dark">San Diego, USA</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto">
+          <p class="dark-grey-text font-weight-light">7420 Carroll Rd.</p>
+          <p class="dark-grey-text font-weight-light">San Diego CA 91121</p>
+          <p class="dark-grey-text">Phone 90 203020</p>
+          <p class="text-primary font-weight-light">sales@pixcellence.com</p>
+
+
+        </div>
+
+
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold text-dark">Bangalore, India</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto">
+
+          <p class="dark-grey-text font-weight-light">Phone 9972763005</p>
+          <p class="dark-grey-text">+91-80-43943005</p>
+          <p class="dark-grey-text text-primary font-weight-light">sales@pixcellence.com</p>
+
+        </div>
+
+
+
+        <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-md-0 mb-4">
+
+
+          <h6 class="text-uppercase font-weight-bold text-dark">Madrid, Spain</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto">
+          <p class="dark-grey-text font-weight-light">Pixcellence AI</p>
+          <p class="dark-grey-text text-primary font-weight-light" href="#!">sales@pixcellence.com</p>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="footer-copyright text-center text-black-50 py-3">© 2019 Copyright:
+      All Rights Reserved Pixcellence Inc.
+    </div>
+
+
   </footer>
 
   <script src="../js/vendor/jquery-3.2.1.min.js"></script>
