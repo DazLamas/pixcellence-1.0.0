@@ -2,7 +2,14 @@
 .banner-landing {
   height: 100vh;
   width: 100%;
-  background-image: url('../img/landing/robotic-hands/robotic-hands-1440.png');
+  background: url('../img/landing/robotic-hands/robotic-hands-1440.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale')";
+
   .banner__text-cont {
     margin: 10em 5em 0 5em;
   }
@@ -83,8 +90,14 @@
   height: auto;
   display: inline-flex;
   flex-direction: row;
-  background-image: url('../img/landing/circle-long-angle-1500_edge.jpg');
-  background-repeat: no-repeat;
+  background: url('../img/landing/circle-long-angle-1500_edge.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale')";
+
   .banner-machinelearning__header {
     width: 38%;
     justify-content: flex-start;
@@ -149,21 +162,27 @@
   }
 }
 .banner-imageprocess__image {
-  background: url('../img/landing/yellow-bg-camera_luis-quintero-576.jpg');
-  background-size: 100% auto;
   height: 711px;
+  background: url('../img/landing/yellow-bg-camera_luis-quintero-576.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale')";
 }
 .banner-imageprocess__text {
-  padding: 50px;
+  padding: 40px;
+
   h2 {
     font-family: 'Signika';
-    font-size: 56px;
+    font-size: 54px;
     color: #333333;
     line-height: 53px;
   }
   .subtitle {
     font-family: 'Open Sans';
-    font-size: 24px;
+    font-size: 22px;
     color: #F2994A;
     margin-bottom: 1.5em;
     display: block;
@@ -171,7 +190,7 @@
   ul {
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     color: #000000;
     margin-bottom: 1.5em;
     li {
@@ -184,7 +203,13 @@
 .banner-semantic {
   height: 432px;
   width: 100%;
-  background: url('../img/drive-safe/guy-road-grid_1024.jpg');
+  background: url('../img/drive-safe/guy-road-grid_1024.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale')";
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -225,7 +250,13 @@
 .banner-homehub {
   width: 100%;
   height: 817px;
-  background: url('../img/landing/apartment-empty-modified_1024.jpg');
+  background: url('../img/landing/apartment-empty-modified_1024.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale')";
   padding: 43px 67px 0 0;
   display: flex;
   justify-content: flex-end;

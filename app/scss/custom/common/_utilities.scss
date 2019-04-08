@@ -6,6 +6,29 @@
   box-shadow:         0px 2px 6px 0.5px #e9edf1;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
+.primary-link {
+  -webkit-transition: all .5s; /* Safari */
+  transition: all .5s;
+  &:hover {
+    color: $blue;
+  }
+}
+.underline-link {
+  -webkit-transition: all .5s; /* Safari */
+  transition: all .5s;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.hover-shadow {
+  &:hover {
+    -webkit-box-shadow: 0px 2px 6px .5px #555555;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0px 2px 6px .5px #555555;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         0px 2px 6px .5px #555555;
+    background-color: transparent;
+  }
+}
+
 .total-center {
   display: flex;
   justify-content: center;
@@ -88,26 +111,4 @@
   white-space: nowrap;
   overflow: hidden;
   display: block;
-}
-.primary-link {
-  -webkit-transition: all .5s; /* Safari */
-  transition: all .5s;
-  &:hover {
-    color: $blue;
-  }
-}
-.underline-link {
-  -webkit-transition: all .5s; /* Safari */
-  transition: all .5s;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-.hover-shadow {
-  &:hover {
-    -webkit-box-shadow: 0px 2px 6px .5px #555555;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    0px 2px 6px .5px #555555;  /* Firefox 3.5 - 3.6 */
-    box-shadow:         0px 2px 6px .5px #555555;
-    background-color: transparent;
-  }
 }
