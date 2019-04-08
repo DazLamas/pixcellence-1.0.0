@@ -5,6 +5,15 @@
   background: url('../img/machine-learning/robot-circle_1920.jpg');
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/machine-learning/robot-circle_1920.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/machine-learning/robot-circle_1920.jpg', sizingMethod='scale')";
+  .banner__text-cont {
+    margin: 10em 5em 0 5em;
+    .title {
+      font-family: 'Roboto Condensed';
+      font-size: 45px;
+      letter-spacing: .3px;
+      color: #f2f2f2;
+    }
+  }
 }
 .banner-characteristics {
   width: 100%;
