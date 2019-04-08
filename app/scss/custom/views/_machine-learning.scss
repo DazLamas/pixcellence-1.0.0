@@ -3,7 +3,8 @@
   width: 100%;
   height: 100vh;
   background: url('../img/machine-learning/robot-circle_1920.jpg');
-  background-size: 100%  auto;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/machine-learning/robot-circle_1920.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/machine-learning/robot-circle_1920.jpg', sizingMethod='scale')";
 }
 .banner-characteristics {
   width: 100%;
@@ -16,7 +17,7 @@
 .banner-characteristics__content-wrapper {
   display: flex;
   flex-direction: row;
-  width: 70%;
+  max-width: 1000px;
 }
 .banner-characteristics__col-1 {
   width: 40%;
@@ -24,7 +25,7 @@
 }
 .banner-characteristics__col-2 {
   width: 60%;
-  padding-left: 100px;
+  padding-left: 11%;
 }
 .banner-characteristics__col-1__wrapper {
   * {
@@ -56,7 +57,7 @@
 .banner-characteristics__col-2__text-wrapper{
   width: 212px;
   &:first-of-type {
-    margin-right: 80px;
+    margin-right: 7%;
   }
 }
 .banner-characteristics__col-2__title{
@@ -78,7 +79,7 @@
 }
 .banner-objrecog {
   width: 100%;
-  padding: 80px 0;
+  padding: 50px 0 80px 0;
   background: #03336F;
   display: flex;
   justify-content: center;
@@ -87,14 +88,14 @@
 .banner-objrecog__content-wrapper {
   display: flex;
   flex-direction: row;
-  width: 71%;
+  max-width: 990px;
 }
 .banner-objrecog__col-1 {
-  width: 40%;
+  width: 43%;
 }
 .banner-objrecog__col-2 {
-  width: 60%;
-  padding-left: 100px;
+  width: 57%;
+  padding-left: 4%;
 }
 .banner-objrecog__col-1__text {
   font-family: 'Roboto';
@@ -138,7 +139,7 @@
 .banner-pixc-claim {
   width: 100%;
   background-color: white;
-  padding: 3em 26em;
+  padding: 3em 20%;
   text-align: center;
   .title {
     font-family: 'Open Sans';
@@ -187,7 +188,7 @@
 }
 .more-applications__row__text {
   width: 50%;
-  padding: 0 146px;
+  padding: 0 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
