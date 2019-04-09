@@ -171,7 +171,43 @@
     letter-spacing: 0.05em;
   }
 }
-
+.banner-semantic-frontpage {
+  background: url('../img/drive-safe/taxi/taxi-grid_1600.png');
+  height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  .banner-semantic-frontpage__header {
+    margin: 0 50px 50px 0;
+    width: 300px;
+    .extra-text {
+      font-family: 'Signika';
+      font-size: 20px;
+      line-height: normal;
+      color: #fff;
+      letter-spacing: .04em;
+    }
+    .title {
+      font-family: 'Open Sans';
+      font-weight: 300;
+      font-size: 34px;
+      line-height: 44px;
+      letter-spacing: .02em;
+      color: #fff;
+      margin-bottom: 17px;
+      margin-top: 8px;
+    }
+    .text {
+      font-family: 'Roboto';
+      font-weight: 100;
+      font-size: 13px;
+      line-height: 24px;
+      letter-spacing: .04em;
+      color: #fff;
+    }
+  }
+}
 .banner-drivesafe {
   display: flex;
   align-items: center;
