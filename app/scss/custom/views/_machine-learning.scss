@@ -88,7 +88,7 @@
 }
 .banner-objrecog {
   width: 100%;
-  padding: 50px 0 80px 0;
+  padding: 30px 0 100px 0;
   background: #03336F;
   display: flex;
   justify-content: center;
@@ -104,14 +104,14 @@
 }
 .banner-objrecog__col-2 {
   width: 57%;
-  padding-left: 4%;
+  // padding-left: 4%;
 }
 .banner-objrecog__col-1__text {
   font-family: 'Roboto';
   font-weight: 100;
-  font-size: 47px;
+  font-size: 44px;
   line-height: 58px;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.06em;
 }
 .banner-objrecog__col-2__items-wrapper {
   display: flex;
@@ -123,7 +123,7 @@
     text-align: right;
   }
   img {
-    height: 130px;
+    height: 170px;
   }
   .title {
     font-family: 'Roboto';
@@ -229,7 +229,7 @@
         font-size: 40px;
         color: $almost-black;
         margin-bottom: 5%;
-        margin-top: 40px;
+        margin-top: 54px;
       }
       .description {
         max-width: 500px;
@@ -243,19 +243,19 @@
       }
     }
     &__sensors-cont{
-      width: 65%;
+      width: 62%;
       .icons-container {
         display: flex;
         flex-direction: row;
         padding: 50px 0;
         .icon {
-          height: 80px;
+          width: 70px;
           margin-right: 20px;
         }
         h5 {
           color: #4F4F4F;
           font-family: 'Open Sans';
-          font-size: 30px;
+          font-size: 26px;
           font-weight: normal;
           letter-spacing: .05em;
           margin-bottom: 10px;
@@ -263,10 +263,10 @@
         p {
           color: #4F4F4F;
           font-family: 'Roboto';
-          font-size: 18px;
+          font-size: 15px;
           font-weight: 300;
           letter-spacing: .05em;
-          max-width: 300px;
+          width: 300px;
         }
       }
     }
@@ -294,22 +294,16 @@
   flex-direction: row;
   height: 475px;
 }
-.more-applications__row__img{
-  width: 50%;
-  background-size: 100% auto;
-  &.conference {
-    background: url('../img/machine-learning/conference-room.png');
-  }
-  &.hotelroom{
-    background: url('../img/machine-learning/hotelroom.jpg');
-  }
-  &.parking{
-    background: url('../img/machine-learning/parking.png');
-  }
-  &.doorbell{
-    background: url('../img/machine-learning/house.jpg');
-  }
-}
+// .more-applications__row__img{
+//   width: 50%;
+//   background-size: 100% auto;
+//   &.conference {
+//     background: url('../img/machine-learning/conference-room.png');
+//   }
+//   &.parking{
+//     background: url('../img/machine-learning/parking.png');
+//   }
+// }
 .more-applications__row__text {
   width: 50%;
   padding: 0 10%;
