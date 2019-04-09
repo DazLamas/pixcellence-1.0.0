@@ -171,6 +171,85 @@
     letter-spacing: 0.05em;
   }
 }
+
+.banner-drivesafe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+
+  .banner-drivesafe {
+    &__phone-cont{
+      width: 80%;
+      padding-bottom: 80px;
+      .img {
+        width: 600px;
+      }
+      .title {
+        font-family: 'Signika';
+        font-size: 40px;
+        color: $almost-black;
+        margin-bottom: 5%;
+        margin-top: 40px;
+      }
+      .description {
+        max-width: 500px;
+        min-width: 200px;
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: .05em;
+        color: $almost-black;
+        line-height: 35px;
+      }
+    }
+    &__sensors-cont{
+      width: 65%;
+      .icons-container {
+        display: flex;
+        flex-direction: row;
+        padding: 50px 0;
+        .icon {
+          height: 80px;
+          margin-right: 20px;
+        }
+        h5 {
+          color: #4F4F4F;
+          font-family: 'Open Sans';
+          font-size: 30px;
+          font-weight: normal;
+          letter-spacing: .05em;
+          margin-bottom: 10px;
+        }
+        p {
+          color: #4F4F4F;
+          font-family: 'Roboto';
+          font-size: 18px;
+          font-weight: 300;
+          letter-spacing: .05em;
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}
+
+.fluid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  // .fluid-container__item {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   flex-direction: column;
+  // }
+}
+
 .more-applications {
   width: 100%;
 }
