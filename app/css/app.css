@@ -9843,15 +9843,7 @@ html, body {
   cursor: pointer;
   text-decoration: none; }
 
-input[type="checkbox"]:checked ~ .menu-container {
-  transform: translateX(0); }
-
-input[type=checkbox] {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  display: none; }
-
-.menu__icon {
+.menu__icon-body {
   transition: all 0.3s;
   position: absolute;
   box-sizing: border-box;
@@ -9864,7 +9856,7 @@ input[type=checkbox] {
   height: 22px;
   width: 22px; }
 
-.menu__icon .line {
+.menu__icon-body .line {
   position: relative;
   transition: all 0.3s;
   box-sizing: border-box;
@@ -9873,20 +9865,28 @@ input[type=checkbox] {
   height: 3px;
   width: 100%; }
 
-.menu__icon .line.middle {
+.menu__icon-body .line.middle {
   margin-top: 3px; }
 
-.menu__icon .line.bottom {
+.menu__icon-body .line.bottom {
   margin-top: 3px; }
 
-input[type=checkbox]:checked ~ .menu__icon > .middle {
+input[type=checkbox].menu-toggle-checkbox {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none; }
+
+input[type=checkbox].menu-toggle-checkbox:checked ~ .menu-container {
+  transform: translateX(0); }
+
+input[type=checkbox].menu-toggle-checkbox:checked ~ .menu__icon-body .middle {
   opacity: 0; }
 
-input[type=checkbox]:checked ~ .menu__icon > .diagonal.top {
+input[type=checkbox].menu-toggle-checkbox:checked ~ .menu__icon-body .diagonal.top {
   transform: rotate(135deg);
   margin-top: 8px; }
 
-input[type=checkbox]:checked ~ .menu__icon > .diagonal.bottom {
+input[type=checkbox].menu-toggle-checkbox:checked ~ .menu__icon-body .diagonal.bottom {
   transform: rotate(-135deg);
   margin-top: -9px; }
 
