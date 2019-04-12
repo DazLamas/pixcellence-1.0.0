@@ -1,40 +1,40 @@
 /* menu.scss */
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  height: 60px;
-  width: 100%;
-  padding: 1em 5em;
-  &__logo {
-    height: 15px;
-  }
-  &__links-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  &__links {
-    font-family: 'Open Sans';
-    font-weight: 300;
-    font-size: 14px;
-    line-height: normal;
-    letter-spacing: 0.01em;
-    color: #828282;
-    padding: 0 1em;
-  }
-  .btn {
-    width: 92px;
-    height: 26px;
-    border-radius: 20px;
-    font-family: Roboto;
-    font-size: 12px;
-    line-height: normal;
-    // color: #01B0F0;
-    // border-color: #01B0F0;
-  }
-}
+// .menu {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   background-color: white;
+//   height: 60px;
+//   width: 100%;
+//   padding: 1em 5em;
+//   &__logo {
+//     height: 15px;
+//   }
+//   &__links-container{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+//   &__links {
+//     font-family: 'Open Sans';
+//     font-weight: 300;
+//     font-size: 14px;
+//     line-height: normal;
+//     letter-spacing: 0.01em;
+//     color: #828282;
+//     padding: 0 1em;
+//   }
+//   .btn {
+//     width: 92px;
+//     height: 26px;
+//     border-radius: 20px;
+//     font-family: Roboto;
+//     font-size: 12px;
+//     line-height: normal;
+//     // color: #01B0F0;
+//     // border-color: #01B0F0;
+//   }
+// }
 
 .header {
     display: block;
@@ -48,7 +48,7 @@
     overflow: hidden;
     z-index: 10;
 }
-#sidebarMenu {
+.menu-container {
     height: 100%;
     position: fixed;
     left: 0;
@@ -58,12 +58,12 @@
     transition: transform 250ms ease-in-out;
     background: white;
 }
-.sidebarMenuInner{
+.menu{
     margin:0;
     padding:0;
     border-top: 1px solid rgba(1, 1, 1, 0.10);
 }
-.sidebarMenuInner li{
+.menu__item{
     list-style: none;
     color: black;
     text-transform: uppercase;
@@ -72,19 +72,19 @@
     cursor: pointer;
     border-bottom: 1px solid rgba(1, 1, 1, 0.10);
 }
-.sidebarMenuInner li span{
-    display: block;
-    font-size: 14px;
-    color: rgba(1, 1, 1, 0.50);
-}
-.sidebarMenuInner li a{
+// .menu .menu__item span{
+//     display: block;
+//     font-size: 14px;
+//     color: rgba(1, 1, 1, 0.50);
+// }
+.menu__link{
     color: black;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
 }
-input[type="checkbox"]:checked ~ #sidebarMenu {
+input[type="checkbox"]:checked ~ .menu-container {
     transform: translateX(0);
 }
 
