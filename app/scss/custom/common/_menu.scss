@@ -93,11 +93,11 @@ input[type=checkbox] {
     box-sizing: border-box;
     display: none;
 }
-.sidebarIconToggle {
+.menu__icon {
     transition: all 0.3s;
+    position: absolute;
     box-sizing: border-box;
     cursor: pointer;
-    position: absolute;
     z-index: 99;
     height: 100%;
     width: 100%;
@@ -105,49 +105,33 @@ input[type=checkbox] {
     left: 15px;
     height: 22px;
     width: 22px;
+    .line {
+        position: relative;
+        transition: all 0.3s;
+        box-sizing: border-box;
+        background-color: black;
+        float: left;
+        height: 3px;
+        width: 100%;
+        &.middle {
+            margin-top: 3px;
+        }
+        &.bottom {
+            margin-top: 3px;
+        }
+    }
 }
-.spinner {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background-color: black;
-}
-.horizontal {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: relative;
-    float: left;
-    margin-top: 3px;
-}
-.diagonal.part-1 {
-    position: relative;
-    transition: all 0.3s;
-    box-sizing: border-box;
-    float: left;
-}
-.diagonal.part-2 {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: relative;
-    float: left;
-    margin-top: 3px;
-}
-input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
-    transition: all 0.3s;
-    box-sizing: border-box;
+input[type=checkbox]:checked ~ .menu__icon > .middle {
+    // transition: all 0.3s;
     opacity: 0;
 }
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
-    transition: all 0.3s;
-    box-sizing: border-box;
+input[type=checkbox]:checked ~ .menu__icon > .diagonal.top {
+    // transition: all 0.3s;
     transform: rotate(135deg);
     margin-top: 8px;
 }
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
-    transition: all 0.3s;
-    box-sizing: border-box;
+input[type=checkbox]:checked ~ .menu__icon > .diagonal.bottom {
+    // transition: all 0.3s;
     transform: rotate(-135deg);
     margin-top: -9px;
 }
