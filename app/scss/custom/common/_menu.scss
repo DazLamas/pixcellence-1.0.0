@@ -36,7 +36,7 @@
 //   }
 // }
 
-.header {
+.menu-header {
     display: block;
     margin: 0 auto;
     width: 100%;
@@ -118,14 +118,14 @@ input[type=checkbox].menu-toggle-checkbox {
         transform: translateX(0);
     }
     .menu__icon-body {//must keep the hierarchy to work
-      .middle {
+      .line.middle {
           opacity: 0;
       }
-      .diagonal.top {
+      .line.top {
           transform: rotate(135deg);
           margin-top: 8px;
       }
-      .diagonal.bottom {
+      .line.bottom {
           transform: rotate(-135deg);
           margin-top: -9px;
       }

@@ -9800,7 +9800,7 @@ html, body {
   font-size: 15px; }
 
 /* menu.scss */
-.header {
+.menu-header {
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -9879,14 +9879,14 @@ input[type=checkbox].menu-toggle-checkbox {
 input[type=checkbox].menu-toggle-checkbox:checked ~ .menu-container {
   transform: translateX(0); }
 
-input[type=checkbox].menu-toggle-checkbox:checked ~ .menu__icon-body .middle {
+input[type=checkbox].menu-toggle-checkbox:checked ~ .menu__icon-body .line.middle {
   opacity: 0; }
 
-input[type=checkbox].menu-toggle-checkbox:checked ~ .menu__icon-body .diagonal.top {
+input[type=checkbox].menu-toggle-checkbox:checked ~ .menu__icon-body .line.top {
   transform: rotate(135deg);
   margin-top: 8px; }
 
-input[type=checkbox].menu-toggle-checkbox:checked ~ .menu__icon-body .diagonal.bottom {
+input[type=checkbox].menu-toggle-checkbox:checked ~ .menu__icon-body .line.bottom {
   transform: rotate(-135deg);
   margin-top: -9px; }
 
