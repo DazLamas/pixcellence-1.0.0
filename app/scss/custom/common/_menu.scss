@@ -1,4 +1,9 @@
 /* menu.scss */
+
+$menu-width   : 250px;
+$header-height: 60px;
+$logo-height  : 15px;
+
 // .menu {
 //   display: flex;
 //   justify-content: space-between;
@@ -44,7 +49,7 @@
     box-shadow: none;
     background-color: white;
     position: fixed;
-    height: 60px!important;
+    height: $header-height!important;
     overflow: hidden;
     z-index: 10;
 }
@@ -52,12 +57,12 @@
 .menu-container {
     height: 100%;
     position: fixed;
-    left: 0;
-    width: 250px;
-    margin-top: 60px;
-    transform: translateX(-250px);
+    right: 0;
+    width: $menu-width;
+    margin-top: $header-height;
+    transform: translateX($menu-width);
     transition: transform 250ms ease-in-out;
-    background: white;
+    background: $white;
 }
 .menu{
     margin:0;
@@ -80,18 +85,23 @@
     cursor: pointer;
     text-decoration: none;
 }
+.menu__logo {
+    position: absolute;
+    height: $logo-height;
+    margin-top: ($header-height - $logo-height)/2;
+    left: $distance--normal;
+  }
 .menu__icon-body {
     transition: all 0.3s;
+    height: auto;
+    width: 22px;
     position: absolute;
+    z-index: 99;
+    right: $distance--normal;
+    margin-top: ($header-height - 15px)/2;
+    margin-bottom: 0;
     box-sizing: border-box;
     cursor: pointer;
-    z-index: 99;
-    height: 100%;
-    width: 100%;
-    top: 22px;
-    left: 15px;
-    height: 22px;
-    width: 22px;
     .line {
         position: relative;
         transition: all 0.3s;

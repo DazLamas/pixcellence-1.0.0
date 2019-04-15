@@ -1,4 +1,12 @@
 /* utilities.scss */
+.padding {
+  &--horizontal{
+    %--normal {
+      padding: 0 $distance--normal;
+    }
+  }
+}
+
 
 .shadow-bottom {
   -webkit-box-shadow: 0px 2px 6px 0.5px #e9edf1;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */

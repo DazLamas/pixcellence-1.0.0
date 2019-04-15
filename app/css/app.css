@@ -9815,12 +9815,12 @@ html, body {
 .menu-container {
   height: 100%;
   position: fixed;
-  left: 0;
+  right: 0;
   width: 250px;
   margin-top: 60px;
-  transform: translateX(-250px);
+  transform: translateX(250px);
   transition: transform 250ms ease-in-out;
-  background: white; }
+  background: #fff; }
 
 .menu {
   margin: 0;
@@ -9843,18 +9843,23 @@ html, body {
   cursor: pointer;
   text-decoration: none; }
 
+.menu__logo {
+  position: absolute;
+  height: 15px;
+  margin-top: 22.5px;
+  left: 5.5%; }
+
 .menu__icon-body {
   transition: all 0.3s;
+  height: auto;
+  width: 22px;
   position: absolute;
-  box-sizing: border-box;
-  cursor: pointer;
   z-index: 99;
-  height: 100%;
-  width: 100%;
-  top: 22px;
-  left: 15px;
-  height: 22px;
-  width: 22px; }
+  right: 5.5%;
+  margin-top: 22.5px;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  cursor: pointer; }
 
 .menu__icon-body .line {
   position: relative;
