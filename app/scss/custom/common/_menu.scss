@@ -15,6 +15,7 @@ $logo-height  : 15px;
     height: $header-height!important;
     overflow: hidden;
     z-index: 10;
+    padding-left: $default-padding-value;
 }
 
 .menu-container {
@@ -63,10 +64,9 @@ $logo-height  : 15px;
   display: block;
 }
 .menu__logo {
-    position: absolute;
+    position: inherit;
     height: $logo-height;
     margin-top: ($header-height - $logo-height)/2;
-    left: $default-padding-value;
 }
 .menu__button {
   font-size: 14px;
@@ -136,6 +136,7 @@ input[type=checkbox].menu-toggle-checkbox {
   }
   .menu__logo {
     margin-top: 0;
+    position: inherit;
   }
   .menu-container {
     display: flex;
