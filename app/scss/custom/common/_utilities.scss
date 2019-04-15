@@ -1,8 +1,13 @@
 /* utilities.scss */
 .padding {
   &--horizontal{
-    %--normal {
+    &--normal {
       padding: 0 $default-padding-value;
+    }
+  }
+  &--vertical {
+    &--normal {
+      padding: $default-padding-value 0;
     }
   }
 }

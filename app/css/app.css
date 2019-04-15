@@ -9796,6 +9796,16 @@ html, body {
   width: 100%;
   height: auto; }
 
+.set-content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.max-width-wrapper {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%; }
+
 .footer .text-smaller {
   font-size: 15px; }
 
@@ -9971,6 +9981,12 @@ html, body {
 
 /* type.scss*/
 /* utilities.scss */
+.padding--horizontal--normal {
+  padding: 0 5.5%; }
+
+.padding--vertical--normal {
+  padding: 5.5% 0; }
+
 .shadow-bottom {
   -webkit-box-shadow: 0px 2px 6px 0.5px #e9edf1;
   /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
@@ -10140,12 +10156,10 @@ html, body {
 .banner-landing {
   height: 100vh;
   width: 100%;
+  padding-top: 10em;
   background: url("../img/landing/robotic-hands/robotic-hands-1440.png");
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale')"; }
-
-.banner-landing .banner__text-cont {
-  margin: 10em 5em 0 5em; }
 
 .banner-landing .banner__title {
   font-family: 'Roboto Condensed';
@@ -10158,62 +10172,6 @@ html, body {
   font-weight: 100;
   letter-spacing: 1px;
   font-size: 16px;
-  color: #F2F2F2; }
-
-.banner-iot {
-  width: 100%;
-  padding: 100px;
-  height: auto;
-  display: inline-flex;
-  flex-direction: row;
-  background-color: #09153B; }
-
-.banner-iot .banner-iot__header {
-  width: 33%;
-  justify-content: flex-start;
-  display: flex; }
-
-.banner-iot .banner-iot__header header {
-  text-align: right; }
-
-.banner-iot .banner-iot__header h2 {
-  font-family: 'Roboto Condensed';
-  font-weight: 600;
-  font-size: 43px;
-  color: #F2F2F2; }
-
-.banner-iot .banner-iot__header span {
-  font-family: Roboto;
-  font-size: 20px;
-  letter-spacing: 0.06em;
-  color: #F2F2F2;
-  font-weight: 100; }
-
-.banner-iot .banner-iot__text {
-  width: 66%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-
-.banner-iot .banner-iot__text li {
-  width: 33%; }
-
-.banner-iot .banner-iot__text li h4 {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-size: 23px;
-  line-height: 27px;
-  letter-spacing: .05em;
-  color: #F2F2F2;
-  margin-bottom: .7em; }
-
-.banner-iot .banner-iot__text li p {
-  font-family: 'Open Sans';
-  font-size: 14px;
-  font-weight: 100;
-  line-height: 22px;
-  letter-spacing: .055em;
-  width: 60%;
   color: #F2F2F2; }
 
 .banner-iot-2 {
