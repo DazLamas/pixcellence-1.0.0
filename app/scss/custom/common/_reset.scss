@@ -17,9 +17,9 @@ input:-webkit-autofill {//Remove input-autofill background
 }
 
 a {
-  color: inherit;
+  color: initial;
   &:hover {
-    color: inherit;
+    color: initial;
     text-decoration: none;
   }
 }

@@ -65,32 +65,50 @@ $logo-height  : 15px;
     background: $white;
 }
 .menu{
-    margin:0;
-    padding:0;
-    border-top: 1px solid rgba(1, 1, 1, 0.10);
+    margin-top: 40px;
+    margin-left: 20px;
 }
 .menu__item{
     list-style: none;
-    color: black;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 20px;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(1, 1, 1, 0.10);
+    margin-bottom: 25px;
+    width: 12ch;
+    &--end {
+      bottom: 85px;
+      position: absolute;
+    }
 }
 .menu__link{
-    color: black;
-    text-transform: uppercase;
-    font-weight: bold;
     cursor: pointer;
-    text-decoration: none;
+    list-style: none;
+    color: $black;
+    font-family: 'open sans';
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    display: block;
+    &:hover ~ .menu__link-underline {
+      width: 20%;
+    }
+}
+.menu__link-underline {
+  transition: width 0.4s ease;
+  width: 0%;
+  margin-top: 2px;
+  border-top: .5px solid $blue;
+  float: left;
+  display: block;
 }
 .menu__logo {
     position: absolute;
     height: $logo-height;
     margin-top: ($header-height - $logo-height)/2;
     left: $distance--normal;
-  }
+}
+.menu__button {
+  font-size: 14px;
+  padding: 6px 15px;
+}
 .menu__icon-body {
     transition: all 0.3s;
     height: auto;
