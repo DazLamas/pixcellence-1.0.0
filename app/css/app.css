@@ -10153,6 +10153,10 @@ html, body {
 
 /* views.scss */
 /* landing.scss */
+@media (max-width: 780px) {
+  h1, h2 {
+    font-size: 38px !important; } }
+
 .banner-landing {
   height: 100vh;
   width: 100%;
@@ -10173,6 +10177,11 @@ html, body {
   letter-spacing: 1px;
   font-size: 16px;
   color: #F2F2F2; }
+
+@media (max-width: 780px) {
+  .banner-landing {
+    height: 600px;
+    padding-top: 6.5em; } }
 
 .banner-iot-2 {
   width: 100%;
@@ -10240,7 +10249,8 @@ html, body {
 
 .banner-machinelearning {
   width: 100%;
-  padding: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   height: auto;
   display: inline-flex;
   flex-direction: row;
@@ -10298,6 +10308,21 @@ html, body {
   width: 60%;
   color: #F2F2F2; }
 
+@media (max-width: 720px) {
+  .banner-machinelearning {
+    flex-direction: column; }
+  .banner-machinelearning .banner-machinelearning__header,
+  .banner-machinelearning .banner-machinelearning__text {
+    width: 100%; } }
+
+@media (max-width: 1024px) {
+  .banner-machinelearning {
+    background-position: 20% !important; }
+  .banner-machinelearning .banner-machinelearning__header header {
+    text-align: left; }
+  .banner-machinelearning .banner-machinelearning__text li p {
+    width: 80%; } }
+
 .banners-wrapper {
   width: 100%;
   height: auto;
@@ -10308,6 +10333,16 @@ html, body {
 
 .banners-wrapper .column-2 {
   width: 67%; }
+
+@media (max-width: 990px) {
+  .banners-wrapper {
+    flex-direction: column; }
+  .banners-wrapper .column-1, .banners-wrapper .column-2 {
+    width: 100%; } }
+
+.banner-imageprocess {
+  flex-direction: column;
+  display: flex; }
 
 .banner-imageprocess__image {
   height: 711px;
@@ -10342,6 +10377,16 @@ html, body {
   letter-spacing: 0.02em;
   line-height: 28px;
   margin-bottom: 1em; }
+
+@media (min-width: 565px) {
+  .banner-imageprocess {
+    flex-direction: row;
+    display: flex; } }
+
+@media (min-width: 990px) {
+  .banner-imageprocess {
+    flex-direction: column;
+    display: flex; } }
 
 .banner-semantic {
   height: 432px;
@@ -10421,11 +10466,12 @@ html, body {
   width: 100%;
   justify-content: center;
   display: flex;
-  padding: 43px;
+  padding-top: 43px;
+  padding-bottom: 43px;
   background-color: #F2F2F2; }
 
 .banner-slogan p {
-  max-width: 33%;
+  max-width: 45%;
   color: #2F80ED;
   text-align: center;
   font-family: 'Open Sans';
@@ -10434,12 +10480,18 @@ html, body {
   line-height: normal;
   letter-spacing: .03em; }
 
+@media (max-width: 1300px) {
+  .banner-slogan p {
+    max-width: 70%; } }
+
 .banner-map {
-  height: 550px;
+  min-height: 550px;
+  height: auto;
   background: #2F80ED;
   width: 100%;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding-left: 5.5%; }
 
 .banner-map .column-1 {
   width: 35%; }
@@ -10450,8 +10502,7 @@ html, body {
 .banner-map .banner-map__text {
   justify-content: flex-end;
   display: flex;
-  flex-direction: column;
-  padding-left: 180px; }
+  flex-direction: column; }
 
 .banner-map .banner-map__text h2 {
   font-family: 'Signika';
@@ -10475,6 +10526,25 @@ html, body {
 .banner-map .banner-map__img-cont img {
   margin-left: 15%;
   width: 576px; }
+
+@media (max-width: 1024px) {
+  .banner-map {
+    flex-direction: column;
+    display: flex; }
+  .banner-map .banner-map__text {
+    padding-left: 0;
+    margin-bottom: 2em;
+    margin-top: 2em; }
+  .banner-map .banner-map__text h2, .banner-map .banner-map__text p {
+    text-align: center;
+    padding: 0 30px; }
+  .banner-map .banner-map__img-cont {
+    text-align: center; }
+  .banner-map .banner-map__img-cont img {
+    margin-left: 0;
+    width: 80%; }
+  .banner-map .column-1, .banner-map .column-2 {
+    width: 100%; } }
 
 /* video-expertise.scss */
 .banner-videoexpertise {
