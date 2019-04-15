@@ -9868,14 +9868,6 @@ html, body {
   font-size: 14px;
   padding: 6px 15px; }
 
-.menu__btn {
-  width: 92px;
-  height: 26px;
-  border-radius: 20px;
-  font-family: 'Roboto';
-  font-size: 12px;
-  line-height: normal; }
-
 .menu__icon-body {
   transition: all 0.3s;
   height: auto;
@@ -9908,8 +9900,7 @@ html, body {
   display: none; }
 
 .menu-toggle-checkbox:checked ~ .menu-container {
-  transform: translateX(0);
-  visibility: visible; }
+  transform: translateX(0); }
 
 .menu-toggle-checkbox:checked ~ .menu__icon-body .line.middle {
   opacity: 0; }
@@ -9930,9 +9921,6 @@ html, body {
     justify-content: space-between;
     align-items: center;
     flex-direction: row; }
-  .menu__logo {
-    margin-top: 0;
-    position: inherit; }
   .menu-container {
     display: flex;
     flex-direction: row;
@@ -9942,7 +9930,7 @@ html, body {
     position: absolute;
     right: 250px;
     margin-right: 5.5%; }
-  .menu-container .menu {
+  .menu {
     margin-top: 0;
     margin-left: 0;
     width: auto;
@@ -9950,14 +9938,14 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center; }
-  .menu-container .menu__item {
+  .menu__item {
     margin-bottom: 0;
     width: auto;
     margin-right: 20px; }
-  .menu-container .menu__item--end {
+  .menu__item--end {
     position: inherit;
     margin-left: 20px; }
-  .menu-container .menu__link {
+  .menu__link {
     font-family: 'Roboto';
     font-weight: 300;
     font-size: 15px;
@@ -9966,15 +9954,18 @@ html, body {
     color: #717171;
     text-transform: none;
     margin-top: 7px; }
-  .menu-container .menu__link-underline {
+  .menu__link-underline {
     margin-top: 4px;
     margin-bottom: 0;
     border-top: 1px solid #717171;
     height: 0.5px;
     float: none; }
-  .menu-container .menu__link:hover ~ .menu__link-underline {
+  .menu__link:hover ~ .menu__link-underline {
     width: 40%; }
-  .menu-container .menu__button {
+  .menu__logo {
+    margin-top: 0;
+    position: inherit; }
+  .menu__button {
     font-size: 13px;
     padding: 4px 14px; } }
 
