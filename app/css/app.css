@@ -9802,6 +9802,7 @@ html, body {
 /* menu.scss */
 .menu-header {
   display: block;
+  position: fixed;
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
@@ -9867,6 +9868,14 @@ html, body {
   font-size: 14px;
   padding: 6px 15px; }
 
+.menu__btn {
+  width: 92px;
+  height: 26px;
+  border-radius: 20px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  line-height: normal; }
+
 .menu__icon-body {
   transition: all 0.3s;
   height: auto;
@@ -9894,22 +9903,22 @@ html, body {
 .menu__icon-body .line.bottom {
   margin-top: 3px; }
 
-input[type=checkbox].menu-toggle-checkbox {
-  transition: all 0.3s;
+.menu-toggle-checkbox {
   box-sizing: border-box;
   display: none; }
 
-input[type=checkbox].menu-toggle-checkbox:checked ~ .menu-container {
-  transform: translateX(0); }
+.menu-toggle-checkbox:checked ~ .menu-container {
+  transform: translateX(0);
+  visibility: visible; }
 
-input[type=checkbox].menu-toggle-checkbox:checked ~ .menu__icon-body .line.middle {
+.menu-toggle-checkbox:checked ~ .menu__icon-body .line.middle {
   opacity: 0; }
 
-input[type=checkbox].menu-toggle-checkbox:checked ~ .menu__icon-body .line.top {
+.menu-toggle-checkbox:checked ~ .menu__icon-body .line.top {
   transform: rotate(135deg);
   margin-top: 8px; }
 
-input[type=checkbox].menu-toggle-checkbox:checked ~ .menu__icon-body .line.bottom {
+.menu-toggle-checkbox:checked ~ .menu__icon-body .line.bottom {
   transform: rotate(-135deg);
   margin-top: -9px; }
 

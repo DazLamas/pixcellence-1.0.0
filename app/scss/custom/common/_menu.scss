@@ -6,7 +6,9 @@ $logo-height  : 15px;
 
 .menu-header {
     display: block;
+    position: fixed;
     margin: 0 auto;
+    // height: 60px;
     width: 100%;
     max-width: 100%;
     box-shadow: none;
@@ -72,6 +74,14 @@ $logo-height  : 15px;
   font-size: 14px;
   padding: 6px 15px;
 }
+.menu__btn {
+    width: 92px;
+    height: 26px;
+    border-radius: 20px;
+    font-family: 'Roboto';
+    font-size: 12px;
+    line-height: normal;
+  }
 .menu__icon-body {
     transition: all 0.3s;
     height: auto;
@@ -100,13 +110,13 @@ $logo-height  : 15px;
     }
 }
 
-input[type=checkbox].menu-toggle-checkbox {
-  transition: all 0.3s;
+.menu-toggle-checkbox {
   box-sizing: border-box;
   display: none;
   &:checked ~ {//must keep the hierarchy to work
     .menu-container {
         transform: translateX(0);
+        visibility: visible;
     }
     .menu__icon-body {//must keep the hierarchy to work
       .line.middle {
