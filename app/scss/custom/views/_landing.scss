@@ -24,7 +24,8 @@
 
 .banner-iot-2 {
   width: 100%;
-  padding: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   height: auto;
   display: inline-flex;
   flex-direction: row;
@@ -35,6 +36,7 @@
     display: flex;
     header {
       text-align: right;
+      margin-right: 25px;
     }
     h2 {
       font-family: 'Roboto Condensed';
@@ -56,7 +58,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     li {
-      width: 25%;
+      // width: 25%;
       h4 {
         font-family: 'Open Sans';
         font-weight: 600;
@@ -72,13 +74,25 @@
         font-weight: 100;
         line-height: 23px;
         letter-spacing: .07em;
-        width: 82%;
+        // width: 82%;
         color: #f2f2f2;
       }
     }
   }
 }
-
+@media (max-width: 720px) {
+  .banner-iot-2 {
+    flex-direction: column;
+    .banner-iot-2__header header {
+       text-align: left;
+       margin-bottom: 40px;
+     }
+    .banner-iot-2__header,
+    .banner-iot-2__text {
+      width: 100%;
+    }
+  }
+}
 
 .banner-machinelearning {
   width: 100%;
