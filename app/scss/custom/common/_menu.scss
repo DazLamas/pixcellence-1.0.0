@@ -4,43 +4,6 @@ $menu-width   : 250px;
 $header-height: 60px;
 $logo-height  : 15px;
 
-// .menu {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   background-color: white;
-//   height: 60px;
-//   width: 100%;
-//   padding: 1em 5em;
-//   &__logo {
-//     height: 15px;
-//   }
-//   &__links-container{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-//   &__links {
-//     font-family: 'Open Sans';
-//     font-weight: 300;
-//     font-size: 14px;
-//     line-height: normal;
-//     letter-spacing: 0.01em;
-//     color: #828282;
-//     padding: 0 1em;
-//   }
-//   .btn {
-//     width: 92px;
-//     height: 26px;
-//     border-radius: 20px;
-//     font-family: Roboto;
-//     font-size: 12px;
-//     line-height: normal;
-//     // color: #01B0F0;
-//     // border-color: #01B0F0;
-//   }
-// }
-
 .menu-header {
     display: block;
     margin: 0 auto;
@@ -103,7 +66,7 @@ $logo-height  : 15px;
     position: absolute;
     height: $logo-height;
     margin-top: ($header-height - $logo-height)/2;
-    left: $distance--normal;
+    left: $default-padding-value;
 }
 .menu__button {
   font-size: 14px;
@@ -115,7 +78,7 @@ $logo-height  : 15px;
     width: 22px;
     position: absolute;
     z-index: 99;
-    right: $distance--normal;
+    right: $default-padding-value;
     margin-top: ($header-height - 15px)/2;
     margin-bottom: 0;
     box-sizing: border-box;
@@ -181,8 +144,8 @@ input[type=checkbox].menu-toggle-checkbox {
     margin-top: 0;
     width: auto;
     position: absolute;
-    right: $menu-width; //Undo transformX with other propiety to avoid animtion onResize
-    margin-right: $distance--normal; //apply general padding
+    right: $menu-width; //Undo transformX with other propiety to avoid animation onResize
+    margin-right: $default-padding-value; //apply general padding
       .menu {
         margin-top: 0;
         margin-left: 0;
@@ -194,6 +157,7 @@ input[type=checkbox].menu-toggle-checkbox {
         &__item {
           margin-bottom: 0;
           width: auto;
+          margin-right: 20px;
           &--end {
             position: inherit;
             margin-left: 20px;
@@ -207,18 +171,16 @@ input[type=checkbox].menu-toggle-checkbox {
           letter-spacing: 0.03em;
           color: $gray-600;
           text-transform: none;
-          margin-right: 20px;
-          &:hover {
-            color: $blue;
-          }
+          margin-top: 7px; //Related
           &-underline {
-            transition: width 0.4s ease;
-            width: 0%;
-            margin-top: 0;
+            margin-top: 4px; //Related
             margin-bottom: 0;
-            border-top: .5px solid $blue;
-            float: left;
-            display: block;
+            border-top: 1px solid $gray-600;
+            height: 0.5px;
+            float: none;
+          }
+          &:hover ~ .menu__link-underline {
+            width: 40%;
           }
         }
       }
@@ -227,5 +189,4 @@ input[type=checkbox].menu-toggle-checkbox {
         padding: 4px 14px;
       }
   }
-
 }

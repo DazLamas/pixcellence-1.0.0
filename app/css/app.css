@@ -9942,7 +9942,8 @@ input[type=checkbox].menu-toggle-checkbox:checked ~ .menu__icon-body .line.botto
     align-items: center; }
   .menu-container .menu__item {
     margin-bottom: 0;
-    width: auto; }
+    width: auto;
+    margin-right: 20px; }
   .menu-container .menu__item--end {
     position: inherit;
     margin-left: 20px; }
@@ -9954,17 +9955,15 @@ input[type=checkbox].menu-toggle-checkbox:checked ~ .menu__icon-body .line.botto
     letter-spacing: 0.03em;
     color: #717171;
     text-transform: none;
-    margin-right: 20px; }
-  .menu-container .menu__link:hover {
-    color: #1b84ed; }
+    margin-top: 7px; }
   .menu-container .menu__link-underline {
-    transition: width 0.4s ease;
-    width: 0%;
-    margin-top: 0;
+    margin-top: 4px;
     margin-bottom: 0;
-    border-top: 0.5px solid #1b84ed;
-    float: left;
-    display: block; }
+    border-top: 1px solid #717171;
+    height: 0.5px;
+    float: none; }
+  .menu-container .menu__link:hover ~ .menu__link-underline {
+    width: 40%; }
   .menu-container .menu__button {
     font-size: 13px;
     padding: 4px 14px; } }

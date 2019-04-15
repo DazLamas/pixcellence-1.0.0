@@ -2,7 +2,7 @@
 .padding {
   &--horizontal{
     %--normal {
-      padding: 0 $distance--normal;
+      padding: 0 $default-padding-value;
     }
   }
 }
