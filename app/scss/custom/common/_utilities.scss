@@ -2,12 +2,14 @@
 .padding {
   &--horizontal{
     &--normal {
-      padding: 0 $default-padding-value;
+      padding-left: $default-padding-value;
+      padding-right: $default-padding-value;
     }
   }
   &--vertical {
     &--normal {
-      padding: $default-padding-value 0;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
   }
 }

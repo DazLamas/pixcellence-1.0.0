@@ -9982,10 +9982,12 @@ html, body {
 /* type.scss*/
 /* utilities.scss */
 .padding--horizontal--normal {
-  padding: 0 5.5%; }
+  padding-left: 5.5%;
+  padding-right: 5.5%; }
 
 .padding--vertical--normal {
-  padding: 5.5% 0; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .shadow-bottom {
   -webkit-box-shadow: 0px 2px 6px 0.5px #e9edf1;
@@ -10806,7 +10808,6 @@ html, body {
 
 .banner-characteristics {
   width: 100%;
-  padding: 80px 0;
   background: #03336F;
   display: flex;
   justify-content: center;
@@ -10817,15 +10818,12 @@ html, body {
   flex-direction: row;
   max-width: 1000px; }
 
-.banner-characteristics__col-1 {
-  width: 40%; }
+.banner-characteristics__col-1__wrapper .text-responsive-aligment {
+  text-align: left; }
 
-.banner-characteristics__col-2 {
-  width: 60%;
-  padding-left: 11%; }
-
-.banner-characteristics__col-1__wrapper * {
-  text-align: right; }
+@media (min-width: 767px) {
+  .banner-characteristics__col-1__wrapper .text-responsive-aligment {
+    text-align: right; } }
 
 .banner-characteristics__col-1__title {
   color: white;
@@ -10849,12 +10847,6 @@ html, body {
   line-height: 25px;
   letter-spacing: 0.08em; }
 
-.banner-characteristics__col-2__text-wrapper {
-  width: 212px; }
-
-.banner-characteristics__col-2__text-wrapper:first-of-type {
-  margin-right: 7%; }
-
 .banner-characteristics__col-2__title {
   font-family: 'Open Sans';
   font-weight: 500;
@@ -10874,7 +10866,6 @@ html, body {
 
 .banner-objrecog {
   width: 100%;
-  padding: 30px 0 100px 0;
   background: #03336F;
   display: flex;
   justify-content: center;
@@ -10885,12 +10876,6 @@ html, body {
   flex-direction: row;
   max-width: 990px; }
 
-.banner-objrecog__col-1 {
-  width: 43%; }
-
-.banner-objrecog__col-2 {
-  width: 57%; }
-
 .banner-objrecog__col-1__text {
   font-family: 'Roboto';
   font-weight: 100;
@@ -10900,8 +10885,6 @@ html, body {
 
 .banner-objrecog__col-2__items-wrapper {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   text-align: right; }
 
 .banner-objrecog__col-2__items-wrapper > * {
@@ -10999,22 +10982,21 @@ html, body {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: auto;
-  padding: 200px 0 100px 0; }
+  height: auto; }
 
 .banner-drivesafe .banner-drivesafe__phone-cont {
-  width: 80%;
-  padding-bottom: 80px; }
+  width: 80%; }
 
 .banner-drivesafe .banner-drivesafe__phone-cont .img {
-  width: 600px; }
+  max-width: 500px;
+  width: 100%; }
 
 .banner-drivesafe .banner-drivesafe__phone-cont .title {
   font-family: 'Signika';
   font-size: 40px;
   color: #2e2e2e;
   margin-bottom: 5%;
-  margin-top: 54px; }
+  margin-top: 40px; }
 
 .banner-drivesafe .banner-drivesafe__phone-cont .description {
   max-width: 500px;
