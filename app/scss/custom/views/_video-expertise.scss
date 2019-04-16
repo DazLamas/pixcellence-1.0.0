@@ -3,24 +3,24 @@ $lightpainting-width: 372px;
 $left-aligment: 260px;
 
 .banner-videoexpertise {
-  height: 600px;
+  height: 600px - $header-height;
+  margin-top: $header-height;
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  background: #000;
+  justify-content: flex-end;
+  background: url('../img/video-expertise/light-painting_1920.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   .banner-videoexpertise__wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 0 17.5%;
-  }
-  .banner-videoexpertise__image-aside {
-    width: $lightpainting-width;
+
   }
   .banner-videoexpertise__text {
-    padding-left: 16.5%;
     .title {
       font-family: 'Signika';
       font-weight: bold;
@@ -102,16 +102,16 @@ $left-aligment: 260px;
   padding: 4em 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   .banner-advantages__items-wrapper {
     flex-direction: row;
     display: flex;
     justify-content: space-between;
-    min-width: 49%;
-    max-width: 80%;
+    // min-width: 49%;
+    // max-width: 80%;
   }
   .banner-advantages__items {
-    max-width: 155px;
+    // max-width: 155px;
     * {
       display: block;
     }
@@ -180,8 +180,8 @@ $left-aligment: 260px;
     padding: 30px;
   }
   .banner-advanced__img {
-    max-height: 300px;
-    width: auto;
+    height: 300px;
+    width: 536.67px;
   }
   .banner-advanced__header-wrapper {
     margin-top: 40px;
@@ -233,10 +233,9 @@ $left-aligment: 260px;
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
-  .banner-computervision__text-wrapper {
-    padding-left: 58%;
-    padding-top: 50px;
-  }
+  display: flex;
+  align-items: center;
+  // justify-content: flex-end;
   .banner-computervision__title {
     font-family: 'Roboto';
     font-weight: 300;
