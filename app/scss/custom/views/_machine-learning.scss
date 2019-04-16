@@ -1,7 +1,7 @@
 /* _machine-learning.scss */
 .banner-machine-learning {
   width: 100%;
-  height: 100vh;
+  height: 400px;
   background: url('../img/machine-learning/robot-circle_1920.jpg');
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/machine-learning/robot-circle_1920.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/machine-learning/robot-circle_1920.jpg', sizingMethod='scale')";
@@ -13,6 +13,15 @@
       letter-spacing: .3px;
       color: #f2f2f2;
     }
+  }
+  @media (max-width: 780px) {
+    height: 300px;
+  }
+  @media (max-width: 990px) {
+    height: 400px;
+  }
+  @media (max-width: 1300px) {
+    height: 400px;
   }
 }
 .banner-characteristics {
