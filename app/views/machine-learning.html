@@ -12,64 +12,77 @@
 
 <body>
   <div class="main-container">
-    <nav class="menu position-fixed">
-        <a href="../../index.html"><img src="../img/logo-pixcellence.png" alt="logo pixcellence" class="menu__logo"></a>
-        <ul class="menu__links-container">
-          <li class="menu__links">
-            <a href="machine-learning.html" class="primary-link">Machine Learning</a></li>
-          <li class="menu__links">
-            <a href="video-expertise.html" class="primary-link">Video Expertise</a></li>
-          <li class="menu__links">
-            <a class="btn btn-outline-primary" href="mailto:sales@pixcellence.com">Get in touch</a>
+    <div class="menu-header">
+      <a href="../../index.html"><img src="../img/logo-pixcellence.png" alt="logo pixcellence" class="menu__logo float-left"></a>
+      <input type="checkbox" class="menu-toggle-checkbox" id="menu-toggle-checkbox">
+      <label for="menu-toggle-checkbox" class="menu__icon-body float-right menu-toggle--trigger">
+        <div class="line diagonal top"></div>
+        <div class="line middle"></div>
+        <div class="line diagonal bottom"></div>
+      </label>
+      <nav role="navigation" class="menu-container">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="../views/machine-learning.html" class="menu__link">Machine Learning</a>
+            <hr class="menu__link-underline"></hr>
+          </li>
+          <li class="menu__item">
+            <a href="../views/video-expertise.html" class="menu__link">Video Expertise</a>
+            <hr class="menu__link-underline"></hr>
+          </li>
+          <li class="menu__item--end">
+            <a class="btn btn-outline-primary menu__button" href="mailto:sales@pixcellence.com">Get in touch</a>
           </li>
         </ul>
       </nav>
+    </div>
     <section class="banner-machine-learning bg-img-cover">
 
     </section>
-    <section class="banner-characteristics">
-      <div class="banner-characteristics__content-wrapper">
-        <div class="banner-characteristics__col-1">
-          <header class="banner-characteristics__col-1__wrapper">
-            <h1 class="banner-characteristics__col-1__title">Machine Learning</h2>
-            <p class="banner-characteristics__col-1__claim">Innovation is the Norm</p>
-            <p class="banner-characteristics__col-1__text">Combination of classical <span class="font-weight-normal">image processing</span> based analytics <span class="font-weight-normal">with machine learning</span>, CNNs engineered to achieve desired results on limited embedded resources</p>
+    <section class="banner-characteristics padding--horizontal--normal padding--vertical--normal">
+      <div class="banner-characteristics__content-wrapper d-flex flex-column flex-md-row">
+          <header class="banner-characteristics__col-1__wrapper px-3">
+            <h1 class="banner-characteristics__col-1__title text-responsive-aligment">Machine Learning</h2>
+            <p class="banner-characteristics__col-1__claim text-responsive-aligment">Innovation is the Norm</p>
+            <p class="banner-characteristics__col-1__text text-responsive-aligment">Combination of classical <span class="font-weight-normal">image processing</span> based analytics <span class="font-weight-normal">with machine learning</span>, CNNs engineered to achieve desired results on limited embedded resources</p>
           </header>
-        </div>
-        <div class="banner-characteristics__col-2">
-          <div>
-            <ul class="d-flex flex-direction-row">
-              <li class="banner-characteristics__col-2__text-wrapper">
+          <div class="banner-characteristics__col-2 col-12 col-sm-8 pl-md-5 mt-4 mt-md-0">
+
+            <ul class="d-flex flex-column flex-lg-row">
+              <li class="banner-characteristics__col-2__text-wrapper col-12 col-md-6 my-2 my-lg-2 mx-0 mx-md-3 p-0">
                 <h3 class="banner-characteristics__col-2__title">Real-time Tracking</h3>
                 <p class="banner-characteristics__col-2__text">Real-time human/object detection and tracking implementation capabilities on cloud, edge or device</p>
               </li>
-              <li class="banner-characteristics__col-2__text-wrapper">
+              <li class="banner-characteristics__col-2__text-wrapper col-12 col-md-6 my-2 my-lg-2 mx-0 mx-md-3 p-0">
                 <h3 class="banner-characteristics__col-2__title">Video Analytics</h3>
                 <p class="banner-characteristics__col-2__text">In-house expertise in video analytics algorithms and data training for classification</p>
               </li>
             </ul>
-          </div>
+
         </div>
       </div>
+
     </section>
-    <section class="banner-objrecog">
-      <div class="banner-objrecog__content-wrapper">
-        <div class="banner-objrecog__col-1">
+
+
+    <section class="banner-objrecog padding--horizontal--normal padding--vertical--normal flex-column flex-lg-row">
+
+        <div class="banner-objrecog__col-1 col-12 col-lg-4 justify-content-end">
           <p class="banner-objrecog__col-1__text">Object recognition, classification and counting</p>
         </div>
-        <div class="banner-objrecog__col-2">
-          <ul clasS="banner-objrecog__col-2__items-wrapper">
-            <li>
+        <div class="banner-objrecog__col-2 col-12 col-lg-6">
+          <ul clasS="banner-objrecog__col-2__items-wrapper flex-column flex-sm-row">
+            <li class="m-3">
               <img src="../img/machine-learning/parking.png" alt="">
             </li>
-            <li>
+            <li class="m-3">
               <img src="../img/machine-learning/conference-room.png" alt="">
             </li>
             <li>
             </li>
           </ul>
         </div>
-      </div>
+
     </section>
 
     <section class="banner-semantic-frontpage bg-img-cover">
@@ -80,12 +93,12 @@
       </header>
     </section>
 
-    <section class="banner-drivesafe">
-      <ul class="fluid-container banner-drivesafe__phone-cont">
+    <section class="banner-drivesafe padding--horizontal--normal padding--vertical--normal">
+      <ul class="fluid-container banner-drivesafe__phone-cont  justify-content-center mt-md-4">
         <li class="fluid-container__item">
           <img src="../img/drive-safe/drivesafe-app-mobile_600.png" alt="drive safe app phone example" class="img">
         </li>
-        <li class="fluid-container__item">
+        <li class="fluid-container__item ml-3 ml-md-2 mb-1">
           <h4 class="title">Drive Safe</h4>
           <p class="description">Drive Safe monitors and analyzes driving behaviors with our lastest Augmented Reality Technology</p>
         </li>
@@ -269,5 +282,7 @@
   <script src="../js/vendor/jquery-3.2.1.min.js"></script>
   <script src="../js/vendor/popper.min.js"></script>
   <script src="../js/vendor/bootstrap.min.js"></script>
+  <script src="../js/video-player.js"></script>
+  <script src="../js/menu.js"></script>
 </body>
 </html>

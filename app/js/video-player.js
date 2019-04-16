@@ -20,7 +20,7 @@ function videoplayerOpen() {
 }
 
 function videoplayerClose() {
-  var videoplayer = document.getElementById("VisaChipCardVideo");
+  var videoplayer = document.getElementById("video-cont");
   document.getElementById('videoplayer').style.display = 'none';
   document.getElementById('close-bnt').style.display = 'none';
   videoplayer.pause();
