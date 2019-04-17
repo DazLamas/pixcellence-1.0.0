@@ -26,6 +26,13 @@ $logo-height  : 15px;
     margin-top: $header-height;
     transform: translateX($menu-width);
     transition: transform 250ms ease-in-out;
+
+    -webkit-transition: -webkit-transform 250ms ease-in-out; /* Chrome < 26, Safari < 7 */
+   -moz-transition:    -moz-transform 250ms ease-in-out; /* Firefox < 16 */
+     -o-transition:      -o-transform 250ms ease-in-out; /* Opera < 12.10 */
+        transition: -webkit-transform 250ms ease-in-out; /* Chrome 26-35, Safari, Opera 15-23 */
+        transition:         transform 250ms ease-in-out; /* IE10+, Firefox 16+, Chrome 36+, Opera 12.10 */
+
     background: $white;
 }
 .menu{
@@ -56,7 +63,13 @@ $logo-height  : 15px;
     }
 }
 .menu__link-underline {
-  transition: width 0.4s ease;
+
+  -webkit-transition: -webkit-width 0.4s ease; /* Chrome < 26, Safari < 7 */
+  -moz-transition:    -moz-width 0.4s ease; /* Firefox < 16 */
+   -o-transition:      -o-width 0.4s ease; /* Opera < 12.10 */
+      transition: -webkit-width 0.4s ease; /* Chrome 26-35, Safari, Opera 15-23 */
+      transition:         width 0.4s ease; /* IE10+, Firefox 16+, Chrome 36+, Opera 12.10 */
+
   width: 0%;
   margin-top: 2px;
   border-top: .5px solid $blue;
@@ -74,7 +87,12 @@ $logo-height  : 15px;
 }
 .menu__icon-body {
     position: static;
-    transition: all 0.3s;
+    -webkit-transition: -webkit-all 0.3s; /* Chrome < 26, Safari < 7 */
+    -moz-transition:    -moz-all 0.3s; /* Firefox < 16 */
+     -o-transition:      -o-all 0.3s; /* Opera < 12.10 */
+        transition: -webkit-all 0.3s; /* Chrome 26-35, Safari, Opera 15-23 */
+        transition:         all 0.3s; /* IE10+, Firefox 16+, Chrome 36+, Opera 12.10 */
+
     height: auto;
     width: 22px;
     z-index: 99;
