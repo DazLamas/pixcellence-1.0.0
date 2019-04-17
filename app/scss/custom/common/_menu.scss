@@ -11,12 +11,11 @@ $logo-height  : 15px;
     width: 100%;
     max-width: 100%;
     box-shadow: none;
-    background-color: white;
+    background-color: $white;
     position: fixed;
     height: $header-height!important;
     overflow: hidden;
     z-index: 10;
-    padding-left: $default-padding-value;
 }
 
 .menu-container {
@@ -74,12 +73,11 @@ $logo-height  : 15px;
   padding: 6px 15px;
 }
 .menu__icon-body {
+    position: static;
     transition: all 0.3s;
     height: auto;
     width: 22px;
-    position: absolute;
     z-index: 99;
-    right: $default-padding-value;
     margin-top: ($header-height - 15px)/2;
     margin-bottom: 0;
     box-sizing: border-box;
