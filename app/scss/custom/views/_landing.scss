@@ -1,0 +1,416 @@
+/* landing.scss */
+@media (max-width: 780px) {
+  h1, h2 {
+    font-size: 38px !important;
+  }
+}
+.banner-landing {
+  height: 100vh;
+  width: 100%;
+  padding-top: 10em;
+  background: url('../img/landing/robotic-hands/robotic-hands-1440.png');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale')";
+  .banner__title {
+    font-family: 'Roboto Condensed';
+    font-size: 45px;
+    letter-spacing: .3px;
+    color: #F2F2F2;
+  }
+  .banner__subtitle {
+    font-family: 'Roboto';
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #F2F2F2;
+  }
+  @media (max-width: 780px) {
+    height: 600px;
+    padding-top: 6.5em;
+  }
+}
+
+
+.banner-iot-2 {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: auto;
+  display: inline-flex;
+  flex-direction: row;
+  background-color: #09153B;
+  .banner-iot-2__header {
+    width: 27%;
+    justify-content: flex-start;
+    display: flex;
+    header {
+      text-align: right;
+      margin-right: 25px;
+    }
+    h2 {
+      font-family: 'Roboto Condensed';
+      font-weight: 600;
+      font-size: 43px;
+      color: #F2F2F2;
+    }
+    span {
+      font-family: Roboto;
+      font-size: 20px;
+      letter-spacing: 0.06em;
+      color: #F2F2F2;
+      font-weight: 100;
+    }
+  }
+  .banner-iot-2__text {
+    width: 73%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    li {
+      // width: 25%;
+      h4 {
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: .05em;
+        color: #F2F2F2;
+        margin-bottom: .7em;
+      }
+      p {
+        font-family: 'Open Sans';
+        font-size: 13px;
+        font-weight: 100;
+        line-height: 23px;
+        letter-spacing: .07em;
+        // width: 82%;
+        color: #f2f2f2;
+      }
+    }
+  }
+}
+@media (max-width: 720px) {
+  .banner-iot-2 {
+    flex-direction: column;
+    .banner-iot-2__header header {
+       text-align: left;
+       margin-bottom: 40px;
+     }
+    .banner-iot-2__header,
+    .banner-iot-2__text {
+      width: 100%;
+    }
+  }
+}
+
+.banner-machinelearning {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: auto;
+  display: inline-flex;
+  flex-direction: row;
+  background: url('../img/landing/circle-long-angle-1500_edge.jpg');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/landing/circle-long-angle-1500_edge.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/circle-long-angle-1500_edge.jpg', sizingMethod='scale')";
+
+  .banner-machinelearning__header {
+    width: 38%;
+    justify-content: flex-start;
+    display: flex;
+    header {
+      text-align: right;
+    }
+    h2 {
+      font-family: 'Signika';
+      font-weight: 600;
+      font-size: 40px;
+      color: #F2F2F2;
+    }
+    span {
+      font-family: 'Open Sans';
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: #56CCF2;
+      font-weight: 100;
+    }
+  }
+  .banner-machinelearning__text {
+    width: 62%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    li {
+      width: 25%;
+      margin: 20px 0;
+      h4 {
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 27px;
+        letter-spacing: .05em;
+        color: #F2F2F2;
+        margin-bottom: .7em;
+      }
+      p {
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 22px;
+        letter-spacing: .055em;
+        width: 60%;
+        color: #F2F2F2;
+      }
+    }
+  }
+  @media (max-width: 720px) {
+    flex-direction: column;
+    .banner-machinelearning__header,
+    .banner-machinelearning__text{
+      width: 100%;
+    }
+  }
+  @media (max-width: 1024px) {
+    background-position: 20% !important;
+
+    .banner-machinelearning__header header {
+      text-align: left;
+    }
+
+    .banner-machinelearning__text li p {
+      width: 80%;
+    }
+  }
+}
+
+.banners-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  .column-1 {
+    width: 33%;
+  }
+  .column-2 {
+    width: 67%;
+  }
+  @media (max-width: 990px) {
+    flex-direction: column;
+    .column-1, .column-2 {
+      width: 100%;
+    }
+  }
+}
+.banner-imageprocess {
+  flex-direction: column;
+  display:flex;
+  &__image {
+    height: 711px;
+    background: url('../img/landing/yellow-bg-camera_luis-quintero-576.jpg');
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/landing/yellow-bg-camera_luis-quintero-576.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/yellow-bg-camera_luis-quintero-576.jpg', sizingMethod='scale')";
+  }
+  &__text {
+    padding: 40px;
+
+    h2 {
+      font-family: 'Signika';
+      font-size: 54px;
+      color: #333333;
+      line-height: 53px;
+    }
+    .subtitle {
+      font-family: 'Open Sans';
+      font-size: 22px;
+      color: #F2994A;
+      margin-bottom: 1.5em;
+      display: block;
+    }
+    ul {
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-size: 16px;
+      color: #000000;
+      margin-bottom: 1.5em;
+      li {
+        letter-spacing: 0.02em;
+        line-height: 28px;
+        margin-bottom: 1em;
+      }
+    }
+  }
+  @media (min-width: 565px) {
+    flex-direction: row;
+    display:flex;
+  }
+  @media (min-width: 990px) {
+    flex-direction: column;
+    display:flex;
+  }
+}
+.banner-semantic {
+  height: 432px;
+  width: 100%;
+  background: url('../img/drive-safe/guy-road-grid_1024.jpg');
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 36px 50px 36px;
+  h2 {
+    font-family: 'Signika';
+    font-size: 38px;
+    color: white;
+    line-height: 40px;
+    letter-spacing: .02em;
+    margin-bottom: .2em;
+  }
+  span {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    display: block;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    .btn {
+      margin: 0 10px;
+    }
+    .banner-semantic__video-btn {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      img {
+        height: 25px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.banner-homehub {
+  width: 100%;
+  height: 817px;
+  background: url('../img/landing/apartment-empty-modified_1024.jpg');
+  padding: 43px 67px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  h2 {
+    font-family: Signika;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 59px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: .01em;
+  }
+  span {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: #2F80ED;
+    display: block;
+    // margin-bottom: 1em;
+  }
+  p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 18px;
+    color: $almost-black;
+  }
+}
+.banner-slogan {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  background-color: #F2F2F2;
+  p {
+    max-width: 45%;
+    color: #2F80ED;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    font-size: 22px;
+    line-height: normal;
+    letter-spacing: .03em;
+    @media (max-width: 1300px) {
+      max-width: 70%;
+    }
+  }
+}
+.banner-map {
+  min-height: 550px;
+  height: auto;
+  background: #2F80ED;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 5.5%;
+  .column-1 {
+    width: 35%;
+  }
+  .column-2 {
+    width: 65%;
+  }
+  .banner-map__text{
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    // padding-left: 180px;
+    h2 {
+      font-family: 'Signika';
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 60px;
+      text-align: right;
+      letter-spacing: 0.02em;
+      margin-bottom: .5em;
+      color: #F2F2F2;
+    }
+    p {
+      font-family: 'Open Sans';
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 31px;
+      text-align: right;
+      letter-spacing: 0.06em;
+      color: #F2F2F2;
+    }
+  }
+  .banner-map__img-cont {
+    img {
+      margin-left: 15%;
+      width: 576px;
+    }
+  }
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    display:flex;
+    .banner-map__text {
+      padding-left: 0;
+      margin-bottom: 2em;
+      margin-top: 2em;
+      h2, p {
+        text-align: center;
+        padding: 0 30px;
+      }
+    }
+    .banner-map__img-cont {
+      text-align: center;
+      img {
+        margin-left: 0;
+        width: 80%;
+      }
+    }
+    .column-1, .column-2 {
+      width: 100%;
+    }
+  }
+
+}

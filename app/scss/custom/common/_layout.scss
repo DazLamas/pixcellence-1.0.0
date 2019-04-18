@@ -1,0 +1,33 @@
+/* layout.scss */
+// All sections common layout
+
+html,body{
+  font-size: 16px;
+  margin:0px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+.set-content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.max-width-wrapper {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+}
+.footer {
+  .text-smaller {
+    font-size: 15px;
+  }
+}
+
+@import "_menu";

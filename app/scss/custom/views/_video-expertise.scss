@@ -1,0 +1,261 @@
+/* video-expertise.scss */
+$lightpainting-width: 372px;
+$left-aligment: 260px;
+
+.banner-videoexpertise {
+  height: 600px - $header-height;
+  margin-top: $header-height;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background: url('../img/video-expertise/light-painting_1920.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .banner-videoexpertise__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+  .banner-videoexpertise__text {
+    .title {
+      font-family: 'Signika';
+      font-weight: bold;
+      font-size: 45px;
+      color: #F2F2F2;
+      margin-bottom: .2em;
+    }
+    .text {
+      font-family: 'Open Sans';
+      font-weight: normal;
+      font-size: 15px;
+      line-height: normal;
+      color: #00B3EB;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.banner-cnv-comparison {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #000;
+  padding: 40px 15% 120px 15%;
+
+  .banner-cnv-comparison__row-1 {
+    width: 100%;
+    text-align: left;
+  }
+  .banner-cnv-comparison__row-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .imgs-wrapper {
+      display: flex;
+    }
+  }
+
+  .title {
+    font-family: 'Open Sans';
+    letter-spacing: .01em;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: .02em;
+    color: #F2F2F2;
+    margin-bottom: .5em;
+    max-width: 415px;
+  }
+  .text {
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: .08em;
+    color: #F2F2F2;
+    max-width: 321px;
+    margin-bottom: 1em;
+  }
+  .extra-text {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .img {
+    height: 197px;
+    margin-right: 15px;
+  }
+}
+
+.banner-advantages {
+  background-color: #00B3EB;
+  padding: 4em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .banner-advantages__items-wrapper {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    // min-width: 49%;
+    // max-width: 80%;
+  }
+  .banner-advantages__items {
+    // max-width: 155px;
+    * {
+      display: block;
+    }
+    img {
+      height: 60px;
+      margin-bottom: 20px;
+    }
+    span {
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.07em;
+      margin-bottom: 20px;
+      color: white;
+    }
+    p {
+      font-family: 'Open Sans';
+      font-weight: lighter;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+      color: white;
+    }
+  }
+}
+.banner-slogan-ve {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 4em 6em;
+  .banner-slogan-ve__claim {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 15px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    color: #00B3EB;
+    letter-spacing: .05em;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .banner-slogan-ve__text {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: white;
+  }
+}
+.banner-advanced {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  .banner-advanced__column-1 {
+    background-color: #F2994A;
+    width: 66%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+  }
+  .banner-advanced__column-2 {
+    width: 33%;
+    padding: 30px;
+  }
+  .banner-advanced__img {
+    height: 300px;
+    width: 536.67px;
+  }
+  .banner-advanced__header-wrapper {
+    margin-top: 40px;
+    margin-left: 40px;
+      span {
+          font-family: 'Roboto';
+          font-weight: bold;
+          font-size: 22px;
+          line-height: normal;
+          text-transform: uppercase;
+          font-variant: small-caps;
+          color: white;
+      }
+      p {
+        font-family: 'Open Sans Condensed';
+        font-weight: 300;
+        font-size: 32px;
+        line-height: normal;
+        letter-spacing: 0.02em;
+        color: white;
+      }
+    }
+    .banner-advanced__list-wrapper {
+      .banner-advanced__column-2-__title {
+        color: #4F4F4F;
+        font-family: 'Open Sans';
+        font-weight: 600;
+        font-size: 22px;
+        line-height: normal;
+        margin-bottom: 20px;
+        display: block;
+      }
+      li {
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 33px;
+        letter-spacing: 0.04em;
+        color: #4F4F4F;
+      }
+      .color-orange {
+        color: #F2994A;
+      }
+    }
+}
+.banner-computervision {
+  width: 100%;
+  background: url('../img/video-expertise/circle-long-angle_horzontal_1920.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  // justify-content: flex-end;
+  .banner-computervision__title {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 34px;
+    line-height: normal;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: .02em;
+  }
+  .banner-computervision__text {
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: white;
+    max-width: 400px;
+    margin-bottom: 30px;
+    letter-spacing: .08em;
+  }
+
+}
