@@ -13,6 +13,7 @@ gulp.task('styles', () => {
   return gulp.src('app/scss/app.scss')
     .pipe(sass())
     .pipe(sass().on('error', sass.logError))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('app/css'))
 });
 
