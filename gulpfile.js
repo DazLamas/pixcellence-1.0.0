@@ -31,6 +31,5 @@ gulp.task('watch', () => {
 gulp.task('prod-css', () => {
      return gulp.src('app/css/app.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(rename('app.min.css'))
-    .pipe(gulp.dest('dist/'));
+    .pipe(gulp.dest('app/css'));
 });
