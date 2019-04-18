@@ -93,7 +93,10 @@ $left-aligment: 260px;
   }
   .img {
     height: 197px;
-    margin-right: 15px;
+    @media (max-width: 768px) {
+      height: 145px;
+      margin: 10px 0;
+    }
   }
 }
 
