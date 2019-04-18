@@ -2,6 +2,7 @@
 .gitattributes
 .gitignore.master
 .gitignore.gh-pages
+node_modules
 app/scss
 gulpfile.js
 package.json
