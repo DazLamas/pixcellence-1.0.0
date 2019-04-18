@@ -1,5 +1,6 @@
 .DS_Store
 .gitattributes
+.gitignore.master
 node_modules
 app/scss
 gulpfile.js
