@@ -24,14 +24,6 @@ $logo-height  : 15px;
     width: $menu-width;
     margin-top: $header-height;
     transform: translateX($menu-width);
-    transition: transform 250ms ease-in-out;
-
-    -webkit-transition: -webkit-transform 250ms ease-in-out; /* Chrome < 26, Safari < 7 */
-   -moz-transition:    -moz-transform 250ms ease-in-out; /* Firefox < 16 */
-     -o-transition:      -o-transform 250ms ease-in-out; /* Opera < 12.10 */
-        transition: -webkit-transform 250ms ease-in-out; /* Chrome 26-35, Safari, Opera 15-23 */
-        transition:         transform 250ms ease-in-out; /* IE10+, Firefox 16+, Chrome 36+, Opera 12.10 */
-
     background: $white;
 }
 .menu{
@@ -115,26 +107,35 @@ $logo-height  : 15px;
         }
     }
 }
-
-//Media-screen Opener logic
 .menu-toggle-checkbox {
-  box-sizing: border-box;
   display: none;
-  &:checked ~ {//must keep the hierarchy to work
-    .menu-container {
-        transform: translateX(0);
-    }
-    .menu__icon-body {//must keep the hierarchy to work
-      .line.middle {
-          opacity: 0;
+}
+
+/*
+ * Animation
+ */
+
+.animate {//must keep the hierarchy to work
+  .menu-container {
+    transition: transform 250ms ease-in-out;
+    -webkit-transition: -webkit-transform 250ms ease-in-out; /* Chrome < 26, Safari < 7 */
+    -moz-transition:    -moz-transform 250ms ease-in-out; /* Firefox < 16 */
+    -o-transition:      -o-transform 250ms ease-in-out; /* Opera < 12.10 */
+    transition: -webkit-transform 250ms ease-in-out; /* Chrome 26-35, Safari, Opera 15-23 */
+    transform: translateX(0);
+  }
+  .menu__icon-body {
+    .line {
+      &.middle {
+        opacity: 0;
       }
-      .line.top {
-          transform: rotate(135deg);
-          margin-top: 8px;
+      &.top {
+        transform: rotate(135deg);
+        margin-top: 8px;
       }
-      .line.bottom {
-          transform: rotate(-135deg);
-          margin-top: -9px;
+      &.bottom {
+        transform: rotate(-135deg);
+        margin-top: -9px;
       }
     }
   }
