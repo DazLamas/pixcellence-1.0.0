@@ -2,7 +2,7 @@
  * Top Menu
  */
 
- // (function (window, document) {
+ (function (window, document) {
 
   const menu         = document.getElementById('menu-element-js');
   const menuCont     = document.getElementById('menu-container-js');
@@ -13,12 +13,12 @@
                         || document.body.clientWidth;
 
   function closeMenu() {
-    menuCont.classList.remove('animate');
+    menuCont.classList.remove('menu-animation');
     isOpen = false;
   };
 
   function openMenu() {
-    menuCont.classList.add('animate');
+    menuCont.classList.add('menu-animation');
     isOpen = true;
   };
 
@@ -34,7 +34,7 @@
     closeMenu();
   });
 
-// }(window, document));
+}(window, document));
 
 
 
