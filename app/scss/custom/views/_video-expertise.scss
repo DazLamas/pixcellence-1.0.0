@@ -141,24 +141,23 @@ $left-aligment: 260px;
     }
   }
 }
-.banner-slogan-ve {
+.highligthed-claim {
   width: 100%;
-  background-color: black;
   text-align: center;
-  padding: 4em 6em;
-  .banner-slogan-ve__claim {
+  padding: 6.5%;
+  .highligthed-claim__header {
     font-family: 'Open Sans';
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
     line-height: normal;
     text-transform: uppercase;
     font-variant: small-caps;
-    color: #00B3EB;
+    color: #00B3EB;//TODO: unify blue colors
     letter-spacing: .05em;
     display: block;
     margin-bottom: 15px;
   }
-  .banner-slogan-ve__text {
+  .highligthed-claim__text {
     font-family: 'Roboto';
     font-weight: lighter;
     font-size: 25px;
