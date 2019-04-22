@@ -12,15 +12,16 @@
 
 <body>
   <div class="main-container">
-    <div class="menu-header padding--horizontal--normal">
+
+    <div class="menu-header padding--horizontal--normal" id="menu-container-js">
       <a href="../../index.html"><img src="../img/logo-pixcellence.png" alt="logo pixcellence" class="menu__logo float-left"></a>
       <input type="checkbox" class="menu-toggle-checkbox" id="menu-toggle-checkbox">
-      <label for="menu-toggle-checkbox" class="menu__icon-body float-right menu-toggle--trigger">
+      <label for="menu-toggle-checkbox" class="menu__icon-body float-right menu-toggle--trigger" id="menu-toggle-js">
         <div class="line diagonal top"></div>
         <div class="line middle"></div>
         <div class="line diagonal bottom"></div>
       </label>
-      <nav role="navigation" class="menu-container">
+      <nav role="navigation" class="menu-container" id="menu-element-js">
         <ul class="menu">
           <li class="menu__item">
             <a href="../views/machine-learning.html" class="menu__link">Machine Learning</a>
@@ -82,10 +83,12 @@
         </li>
       </ul>
     </section>
-    <section class="banner-slogan-ve">
-      <span class="banner-slogan-ve__claim">Color Night Vision Experts</span>
-      <p class="banner-slogan-ve__text">High volume deployment by multiple security companies</p>
+
+    <section class="highligthed-claim bg-black">
+      <span class="highligthed-claim__header">Color Night Vision Experts</span>
+      <p class="highligthed-claim__text">High volume deployment by multiple security companies</p>
     </section>
+
     <section class="banner-advanced flex-column flex-lg-row">
       <div class="banner-advanced__column-1 flex-column-reverse flex-lg-row w-100">
         <img src="../img/video-expertise/phone-mockup-mountains-orange.png" alt="" class="banner-advanced__img">
@@ -109,12 +112,14 @@
         </div>
       </div>
     </section>
-    <section class="banner-computervision justify-content-sm-end justify-content-center">
-      <div class="banner-computervision__text-wrapper px-4">
-        <h2 class="banner-computervision__title">Computer Vision</h2>
-        <p class="banner-computervision__text">Early detection, vivid night color, significantly lower power without IR or any illumination and superior color night vision</p>
-        <button type="button" name="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#contactForm">Learn more</button>
+    <section class="banner-computer-vision set-content-center">
+      <div class="max-width-wrapper set-content-center justify-content-md-end">
+      <div class="wrapper col-11 col-md-6 padding--horizontal--normal">
+        <h2 class="banner-computer-vision__title">Computer Vision</h2>
+        <p class="banner-computer-vision__text">Early detection, vivid night color, significantly lower power without IR or any illumination and superior color night vision</p>
+        <a class="btn btn-outline-primary" href="mailto:sales@pixcellence.com">Learn more</a>
       </div>
+    </div>
     </section>
   </div>
   <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="contactFormLabel" aria-hidden="true">
