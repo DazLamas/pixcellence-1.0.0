@@ -1,0 +1,28 @@
+/*
+ * Responsive for Video Expertise section
+ */
+.banner-computer-vision {
+  @media (min-width: 576px) {
+    background-image: url('../img/video-expertise/circle-long-angle_horizontal_768.jpg');
+  };
+  @media (min-width: 768px) {
+    background-image: url('../img/video-expertise/circle-long-angle_horizontal_992.jpg');
+  };
+  @media (min-width: 992px) {
+    background-image: url('../img/video-expertise/circle-long-angle_horizontal_1200.jpg');
+  };
+  @media (min-width: 1200px) {
+    background-image: url('../img/video-expertise/circle-long-angle_horizontal_1440.jpg');
+  };
+  @media (min-width: 1440px) {
+    background-image: url('../img/video-expertise/circle-long-angle_horizontal_1920.jpg');
+  };
+  &__text {
+    font-size: 14px;//// TODO: general responsive paragraph sizes
+  }
+  .btn {
+    padding: .25rem .8rem;
+    font-size: .875rem;
+    line-height: 1.5;//// TODO: general responsive btn sizes
+  }
+};

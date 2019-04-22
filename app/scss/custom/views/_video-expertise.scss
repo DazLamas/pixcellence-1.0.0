@@ -231,34 +231,35 @@ $left-aligment: 260px;
       }
     }
 }
-.banner-computervision {
+.banner-computer-vision {
   width: 100%;
-  background: url('../img/video-expertise/circle-long-angle_horzontal_1920.jpg');
+  height: 350px;
+  background-image: url('../img/video-expertise/circle-long-angle_horizontal_576.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 350px;
-  display: flex;
-  align-items: center;
-  // justify-content: flex-end;
-  .banner-computervision__title {
+  background-position: center;
+  background-color: black;
+  &__title {
     font-family: 'Roboto';
-    font-weight: 300;
     font-size: 34px;
+    font-weight: 300;
     line-height: normal;
-    color: white;
+    color: $white;
     margin-bottom: 20px;
     letter-spacing: .02em;
   }
-  .banner-computervision__text {
+  &__text {
     font-family: 'Roboto';
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.04em;
-    color: white;
-    max-width: 400px;
+    color: $white;
+    max-width: 385px;
     margin-bottom: 30px;
     letter-spacing: .08em;
   }
 
 }
+
+@import "_video-expertise-responsive.scss"
