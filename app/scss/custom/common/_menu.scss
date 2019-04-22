@@ -52,28 +52,27 @@ $logo-height  : 15px;
     &:hover ~ .menu__link-underline {
       width: 20%;
     }
+    &-underline {
+      -webkit-transition: -webkit-width 0.4s ease; /* Chrome < 26, Safari < 7 */
+      -moz-transition:    -moz-width 0.4s ease; /* Firefox < 16 */
+       -o-transition:      -o-width 0.4s ease; /* Opera < 12.10 */
+          transition: -webkit-width 0.4s ease; /* Chrome 26-35, Safari, Opera 15-23 */
+          transition:         width 0.4s ease; /* IE10+, Firefox 16+, Chrome 36+, Opera 12.10 */
+      width: 0%;
+      margin-top: 2px;
+      border-top: .5px solid $blue;
+      float: left;
+      display: block;
+    }
 }
-.menu__link-underline {
 
-  -webkit-transition: -webkit-width 0.4s ease; /* Chrome < 26, Safari < 7 */
-  -moz-transition:    -moz-width 0.4s ease; /* Firefox < 16 */
-   -o-transition:      -o-width 0.4s ease; /* Opera < 12.10 */
-      transition: -webkit-width 0.4s ease; /* Chrome 26-35, Safari, Opera 15-23 */
-      transition:         width 0.4s ease; /* IE10+, Firefox 16+, Chrome 36+, Opera 12.10 */
-
-  width: 0%;
-  margin-top: 2px;
-  border-top: .5px solid $blue;
-  float: left;
-  display: block;
-}
 .menu__logo {
     position: inherit;
     height: $logo-height;
     margin-top: ($header-height - $logo-height)/2;
 }
 .menu__button {
-  font-size: 14px;
+  font-size: 13px;
   padding: 6px 15px;
 }
 .menu__icon-body {
@@ -115,7 +114,7 @@ $logo-height  : 15px;
  * Animation
  */
 
-.animate {//must keep the hierarchy to work
+.menu-animation {//must keep the hierarchy to work
   .menu-container {
     transition: transform 250ms ease-in-out;
     -webkit-transition: -webkit-transform 250ms ease-in-out; /* Chrome < 26, Safari < 7 */
@@ -132,10 +131,12 @@ $logo-height  : 15px;
       &.top {
         transform: rotate(135deg);
         margin-top: 8px;
+        // top:8px;
       }
       &.bottom {
         transform: rotate(-135deg);
         margin-top: -9px;
+        // top:-4px;
       }
     }
   }
@@ -202,10 +203,8 @@ $logo-height  : 15px;
   }
   .menu__logo {
     margin-top: 0;
-    position: inherit;
   }
   .menu__button {
-    font-size: 13px;
     padding: 4px 14px;
   }
 }
