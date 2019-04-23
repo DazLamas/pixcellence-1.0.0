@@ -167,69 +167,93 @@ $left-aligment: 260px;
     color: white;
   }
 }
-.banner-advanced {
+
+
+
+.banner-advanced-capabilities {
   width: 100%;
   display: flex;
   flex-direction: row;
-  .banner-advanced__column-1 {
+
+  &__colored-section {
     background-color: #F2994A;
-    width: 66%;
-    padding: 30px;
+    // width: 66%;//
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    overflow-x: hidden;
-  }
-  .banner-advanced__column-2 {
-    width: 33%;
-    padding: 30px;
-  }
-  .banner-advanced__img {
-    height: 300px;
-    width: 536.67px;
-  }
-  .banner-advanced__header-wrapper {
-    margin-top: 40px;
-    margin-left: 40px;
-      span {
-          font-family: 'Roboto';
-          font-weight: bold;
-          font-size: 22px;
-          line-height: normal;
-          text-transform: uppercase;
-          font-variant: small-caps;
-          color: white;
+    // flex-direction: row;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: end;
+    .header-wrapper {
+      text-align: right;//
+      margin-top: 50px;
+      margin-bottom: 3rem;
+      align-self: flex-end;//Avoid width-pulling-left issue
+      .label{
+        font-family: 'Roboto';
+        font-weight: bold;
+        // font-size: 18px;///
+        font-size: 16px;
+        line-height: normal;
+        text-transform: uppercase;
+        font-variant: small-caps;
+        color: white;
+        margin-bottom: 10px;//
+        display: block;//
       }
-      p {
+      .text {
         font-family: 'Open Sans Condensed';
         font-weight: 300;
-        font-size: 32px;
+        // font-size: 28px;//
+        font-size: 26px;
         line-height: normal;
         letter-spacing: 0.02em;
         color: white;
       }
     }
-    .banner-advanced__list-wrapper {
-      .banner-advanced__column-2-__title {
-        color: #4F4F4F;
-        font-family: 'Open Sans';
-        font-weight: 600;
-        font-size: 22px;
-        line-height: normal;
-        margin-bottom: 20px;
-        display: block;
-      }
-      li {
-        font-family: 'Roboto';
-        font-weight: 300;
-        font-size: 15px;
-        line-height: 33px;
-        letter-spacing: 0.04em;
-        color: #4F4F4F;
-      }
-      .color-orange {
-        color: #F2994A;
-      }
+    .img {
+      height: 300px;
+      width: 536.67px;
+      margin-left: -14px;
     }
+    @media (min-width: 576px) {
+      text-align: left;
+      .header {
+        font-size: 22px;
+      }
+      .title {
+        font-size: 32px;
+      }
+      .img {
+        margin-left: 0px;
+      }
+    };
+  }
+  &__list-section {
+    width: 33%;
+    padding: 30px;
+    .title {
+      color: #4F4F4F;
+      font-family: 'Open Sans';
+      font-weight: 600;
+      font-size: 22px;
+      line-height: normal;
+      margin-bottom: 20px;
+      display: block;
+    }
+    .item {
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 33px;
+      letter-spacing: 0.04em;
+      color: #4F4F4F;
+    }
+    .color-orange {//TODO: usar clase utils
+      color: #F2994A;
+    }
+  }
+
 }
 .banner-computer-vision {
   width: 100%;
@@ -259,7 +283,11 @@ $left-aligment: 260px;
     margin-bottom: 30px;
     letter-spacing: .08em;
   }
-
+  .btn {
+    padding: .25rem .8rem;
+    font-size: .875rem;
+    line-height: 1.5;//// TODO: general responsive btn sizes
+  }
 }
 
 @import "_video-expertise-responsive.scss"
