@@ -45,57 +45,60 @@ $left-aligment: 260px;
   flex-direction: column;
   justify-content: center;
   background: #000;
-  padding: 40px 15% 120px 15%;
+  // padding: 40px 15% 120px 15%;
 
-  .banner-cnv-comparison__row-1 {
+  &__row-1 {
     width: 100%;
     text-align: left;
-  }
-  .banner-cnv-comparison__row-2 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    .imgs-wrapper {
-      display: flex;
+    &.title {
+      font-family: 'Open Sans';
+      letter-spacing: .01em;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 42px;
+      letter-spacing: .02em;
+      color: #F2F2F2;
+      margin-bottom: .5em;
+      // max-width: 415px;
     }
   }
-
-  .title {
-    font-family: 'Open Sans';
-    letter-spacing: .01em;
-    font-weight: bold;
-    font-size: 40px;
-    letter-spacing: .02em;
-    color: #F2F2F2;
-    margin-bottom: .5em;
-    max-width: 415px;
-  }
-  .text {
-    font-family: 'Roboto';
-    font-weight: 100;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: .08em;
-    color: #F2F2F2;
-    max-width: 321px;
-    margin-bottom: 1em;
-  }
-  .extra-text {
-    font-family: 'Roboto';
-    font-weight: lighter;
-    font-size: 14px;
-    line-height: 25px;
-    letter-spacing: 0.04em;
-    color: white;
-    margin-bottom: 10px;
-    margin-left: 10px;
-  }
-  .img {
-    height: 197px;
-    @media (max-width: 768px) {
-      height: 145px;
-      margin: 10px 0;
+  &__row-2 {
+    width: 100%;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    .text {
+      font-family: 'Roboto';
+      font-weight: 100;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: .08em;
+      color: #F2F2F2;
+      // max-width: 321px;
+      margin-bottom: 1em;
+    }
+    .extra-text {
+      font-family: 'Roboto';
+      font-weight: lighter;
+      font-size: 14px;
+      line-height: 25px;
+      letter-spacing: 0.04em;
+      color: white;
+      margin-bottom: 10px;
+      margin-left: 10px;
+    }
+    .imgs-wrapper {
+      width: 100%;
+      justify-content: space-around;
+      // display: flex;
+      .img {
+        // height: 197px;
+        height: auto;
+        width: 220px;
+        // @media (max-width: 768px) {
+        //   margin: 10px 0;
+        // }
+      }
     }
   }
 }
@@ -141,6 +144,7 @@ $left-aligment: 260px;
     }
   }
 }
+
 .highligthed-claim {
   width: 100%;
   text-align: center;
@@ -167,8 +171,6 @@ $left-aligment: 260px;
     color: white;
   }
 }
-
-
 
 $list-text-line-height: 28px;
 $phone-width: 545px;
@@ -380,7 +382,7 @@ $align-items-top: 60px!important;
   &__text {
     font-family: 'Roboto';
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 28px;
     letter-spacing: 0.04em;
     color: $white;
@@ -393,6 +395,20 @@ $align-items-top: 60px!important;
     font-size: .875rem;
     line-height: 1.5;//// TODO: general responsive btn sizes
   }
+  //Responsive Background Image:
+  @media (min-width: 576px) {
+    background-image: url('../img/video-expertise/circle-long-angle_horizontal_768.jpg');
+  };
+  @media (min-width: 768px) {
+    background-image: url('../img/video-expertise/circle-long-angle_horizontal_992.jpg');
+  };
+  @media (min-width: 992px) {
+    background-image: url('../img/video-expertise/circle-long-angle_horizontal_1200.jpg');
+  };
+  @media (min-width: 1200px) {
+    background-image: url('../img/video-expertise/circle-long-angle_horizontal_1440.jpg');
+  };
+  @media (min-width: 1440px) {
+    background-image: url('../img/video-expertise/circle-long-angle_horizontal_1920.jpg');
+  };
 }
-
-@import "_video-expertise-responsive.scss"
