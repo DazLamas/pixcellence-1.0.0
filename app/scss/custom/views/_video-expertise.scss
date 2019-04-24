@@ -149,7 +149,7 @@ $left-aligment: 260px;
   .highligthed-claim__header {
     font-family: 'Open Sans';
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     line-height: normal;
     text-transform: uppercase;
     font-variant: small-caps;
@@ -161,7 +161,7 @@ $left-aligment: 260px;
   .highligthed-claim__text {
     font-family: 'Roboto';
     font-weight: lighter;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
     letter-spacing: 0.05em;
     color: white;
@@ -170,29 +170,35 @@ $left-aligment: 260px;
 
 
 
+$list-text-line-height: 28px;
+$phone-width: 545px;
+$phone-width-responsive: 500px;
+$phone-whitespace-responsive: 50px;
+$phone-text-aside-width: 40px + 290px; //padding+w
 .banner-advanced-capabilities {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   &__colored-section {
     background-color: #F2994A;
-    // width: 66%;//
     width: 100%;
     display: flex;
-    // flex-direction: row;
     flex-direction: column;
     overflow: hidden;
     justify-content: end;
+
     .header-wrapper {
-      text-align: right;//
-      margin-top: 50px;
+      text-align: right;
+      margin-top: 40px;
       margin-bottom: 3rem;
-      align-self: flex-end;//Avoid width-pulling-left issue
-      .label{
+      display: flex;
+      flex-direction: column;
+      width: 100%;//Grows with window
+      max-width: $phone-width - 5px; //To fix it on resize
+      .label {
         font-family: 'Roboto';
         font-weight: bold;
-        // font-size: 18px;///
         font-size: 16px;
         line-height: normal;
         text-transform: uppercase;
@@ -202,40 +208,25 @@ $left-aligment: 260px;
         display: block;//
       }
       .text {
+        max-width: 240px;
         font-family: 'Open Sans Condensed';
         font-weight: 300;
-        // font-size: 28px;//
         font-size: 26px;
         line-height: normal;
         letter-spacing: 0.02em;
         color: white;
+        align-self: flex-end;//Avoid width-pulling left
       }
     }
     .img {
       height: 300px;
-      width: 536.67px;
-      margin-left: -14px;
+      width: $phone-width;
     }
-    // @media (min-width: 576px) {
-    //   text-align: left;
-    //   .header {
-    //     font-size: 22px;
-    //   }
-    //   .title {
-    //     font-size: 32px;
-    //   }
-    //   .img {
-    //     margin-left: 0px;
-    //   }
-    // };
   }
 
-  $list-text-size: 15px;
-  $list-dot-position: $list-text-size*2;
-  
   &__list-section {
-    // width: 33%;
-    // padding: 30px;
+    display: flex;
+    justify-content: center;
     width: 100%;
     .title {
       color: #4F4F4F;
@@ -257,14 +248,14 @@ $left-aligment: 260px;
         margin-right: 8px;
         display: inline-block;
         font-weight: bold;
-        line-height: $list-dot-position;
+        line-height: $list-text-line-height;
       }
       &__text {
         font-family: 'Roboto';
         color: #4F4F4F;
-        font-size: $list-text-size;
+        font-size: 15px;
         font-weight: 300;
-        line-height: $list-text-size*2;
+        line-height: $list-text-line-height;
         letter-spacing: 0.04em;
         // line-height: 33px;
       }
@@ -273,8 +264,102 @@ $left-aligment: 260px;
       color: #F2994A;
     }
   }
-
 }
+@media (min-width: 555px) {
+  .banner-advanced-capabilities__colored-section {
+    align-items: center;
+  }
+};
+@media (min-width: 765px) {
+  .banner-advanced-capabilities__colored-section {
+    flex-direction: row-reverse;
+    align-items: start;
+    padding-top: 75px !important;
+    justify-content: center;
+    .header-wrapper {
+      text-align: left;
+      margin: 0;
+      padding: 0 10px;
+      padding-left: 40px;
+      width: auto;
+      .label {
+        letter-spacing: 1px;
+        font-size: 12px;
+      }
+      .text {
+        align-self: start;
+      }
+    }
+    .img {
+      height: 275.22px;
+      width: 500px;
+    }
+  }
+  .banner-advanced-capabilities__list-section {
+    .wrapper {
+      margin-left: $phone-whitespace-responsive;
+      width: $phone-text-aside-width + $phone-width-responsive;
+    }
+  }
+};
+@media (min-width: 992px) {
+  .banner-advanced-capabilities {
+    flex-direction: row;
+    &__colored-section {
+      flex-direction: column;
+      align-items: flex-end;
+      padding-top: 1rem !important; //Avoid 75px prev. bp
+      .header-wrapper {
+        text-align: right;
+        margin-bottom: 40px;
+        margin-top: 38px;
+      }
+      .text {
+        align-self: flex-end;
+      }
+    }
+    &__list-section {
+      justify-content: center;
+      align-items: center;
+      .wrapper {
+        margin-left: 0;
+        width: 100%;
+      }
+      .item__text {
+        line-height: 20px;
+      }
+    }
+  }
+}
+$align-items-top: 60px!important;
+@media (min-width: 1200px) {
+  .banner-advanced-capabilities {
+    max-height: 445px;
+    &__colored-section {
+      flex-direction: row-reverse;
+      align-items: start;
+      justify-content: flex-start;
+      .header-wrapper {
+        text-align: left;
+        margin: 0;
+      }
+      > * {
+        margin-top: $align-items-top;
+      }
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .banner-advanced-capabilities__colored-section {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  .banner-advanced-capabilities__list-section {
+    flex: 0 0 60%;
+    max-width: 40%;
+  }
+}
+
 .banner-computer-vision {
   width: 100%;
   height: 350px;
