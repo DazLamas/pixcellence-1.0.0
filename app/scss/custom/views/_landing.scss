@@ -3,9 +3,25 @@
   height: 100vh;
   width: 100%;
   padding-top: 10em;
-  background: url('../img/landing/robotic-hands/robotic-hands-1440.png');
+  background: url('../img/landing/robotic-hands/robotic-hands-1024.jpg');
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/robotic-hands/robotic-hands-1440.png', sizingMethod='scale')";
+  //Responsive:
+  /*@media (min-width: 576px) {
+    background-image: url('../img/landing/robotic-hands/robotic-hands-768.jpg');
+  };*/
+ /* @media (min-width: 768px) {
+    background-image: url('../img/landing/robotic-hands/robotic-hands-1024.jpg');
+  };*/
+  @media (min-width: 992px) {
+    background-image: url('../img/landing/robotic-hands/robotic-hands-1200.jpg');
+  };
+  @media (min-width: 1200px) {
+    background-image: url('../img/landing/robotic-hands/robotic-hands-1440.jpg');
+  };
+  @media (min-width: 1440px) {
+    background-image: url('../img/landing/robotic-hands/robotic-hands-1920.jpg');
+  };
   .banner__title {
     font-family: 'Roboto Condensed';
     font-size: 45px;
