@@ -292,7 +292,7 @@ $banner-semantic-bottom-padding: 40px;
     flex-direction: row;
     width: 100%;
     padding: 20px $banner-semantic-horizontal-padding;
-    background-color: $black; //#2e2e2e;
+    background-color: $blue; //#2e2e2e;
     justify-content: center;
   }
   &__video--btn {
@@ -349,7 +349,6 @@ $banner-semantic-bottom-padding: 40px;
   padding: 43px 30px 20px 0;
   display: flex;
   justify-content: flex-end;
-  /*align-items: flex-end;*/
   &__title {
     font-family: Signika;
     font-weight: 600;
