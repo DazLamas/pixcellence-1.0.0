@@ -336,44 +336,59 @@ $banner-semantic-bottom-padding: 40px;
     }
     &__video--btn {
     font-size: 1rem;
-    img {
-      height: 25px;
+      img {
+        height: 25px;
+      }
     }
-  }
   }
 }
 .banner-homehub {
   width: 100%;
-  height: 817px;
+  height: 600px;
   background: url('../img/landing/apartment-empty-modified_1024.jpg');
-  padding: 43px 67px 0 0;
+  padding: 43px 30px 20px 0;
   display: flex;
   justify-content: flex-end;
-  h2 {
+  /*align-items: flex-end;*/
+  &__title {
     font-family: Signika;
     font-weight: 600;
-    font-size: 56px;
-    line-height: 59px;
+    font-size: 32px;
+    line-height: 36px;
     letter-spacing: 0.02em;
     color: #000000;
     margin-bottom: .01em;
   }
-  span {
+  &__extra-text {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
-    font-size: 27px;
-    line-height: 48px;
+    font-size: 20px;
     letter-spacing: -0.02em;
     color: #2F80ED;
     display: block;
     // margin-bottom: 1em;
   }
-  p{
+  &__text {
     font-family: 'Roboto';
     font-weight: 300;
-    font-size: 18px;
+    font-size: 14px;
     color: $almost-black;
+  }
+  @include media-breakpoint-up(sm) {
+    height: 817px;
+    padding: 43px 67px 0 0;
+    &__title {
+      font-size: 56px;
+      line-height: 59px;
+    }
+    &__extra-text {
+      font-size: 27px;
+      line-height: 48px;
+    }
+    &__text {
+      font-size: 18px;
+    }
   }
 }
 .banner-slogan {
