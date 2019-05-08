@@ -189,36 +189,46 @@
   }
 }
 
+$image-proc-sections__max-height-medium: 550px;
+$image-proc-sectionsIMG__max-height-lg: 711px;
+$image-proc-sectionsTEXT__max-height-lg: 450px;
 .banners-wrapper {
   width: 100%;
   height: auto;
   display: flex;
-  .column-1 {
-    width: 33%;
+  flex-direction: column;
+  .column-1, .column-2 {
+    width: 100%;
   }
-  .column-2 {
-    width: 67%;
-  }
-  @media (max-width: 992px) {
-    flex-direction: column;
-    .column-1, .column-2 {
-      width: 100%;
+  @media (min-width: 992px) {
+    flex-direction: row;
+    .column-1 {
+      width: 33%;
+      max-height: $image-proc-sectionsTEXT__max-height-lg + $image-proc-sectionsIMG__max-height-lg;
+    }
+    .column-2 {
+      width: 67%;
+      max-height: $image-proc-sectionsTEXT__max-height-lg + $image-proc-sectionsIMG__max-height-lg;
     }
   }
 }
 .banner-imageprocess {
   flex-direction: column;
   display:flex;
-  &__image {
-    height: 711px;
+
+  &__bg-image-cont {
+    height: 600px;
     background: url('../img/landing/yellow-bg-camera_luis-quintero-576.jpg');
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.../img/landing/yellow-bg-camera_luis-quintero-576.jpg', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/landing/yellow-bg-camera_luis-quintero-576.jpg', sizingMethod='scale')";
   }
-  &__text {
+
+  &__text-cont {
+    height: auto;
+    // max-height:$image-proc-sections__max-height-medium;
     padding: 40px;
 
-    h2 {
+    .title {
       font-family: 'Signika';
       font-size: 54px;
       color: #333333;
@@ -231,26 +241,117 @@
       margin-bottom: 1.5em;
       display: block;
     }
-    ul {
+    .list {
       font-family: 'Roboto';
       font-weight: 300;
-      font-size: 16px;
       color: #000000;
       margin-bottom: 1.5em;
-      li {
+      &__item {
+        font-size: 16px;
         letter-spacing: 0.02em;
         line-height: 28px;
         margin-bottom: 1em;
       }
     }
   }
-  @media (min-width: 565px) {
+  @media (min-width: 720px) {
     flex-direction: row;
     display:flex;
+    &__bg-image-cont {
+      height: auto;
+      max-height:$image-proc-sections__max-height-medium;
+      width: 45%;
+    }
+    &__text-cont {
+      width: 55%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      .title {
+        font-size: 38px;
+        line-height: 40px;
+      }
+      .subtitle {
+        font-size: 18px;
+      }
+      .list__item {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  @media (min-width: 790px) {
+    .title {
+      font-size: 42px;
+      line-height: 42px;
+    }
+    .subtitle {
+      font-size: 20px;
+    }
+    .list__item {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
   @media (min-width: 992px) {
     flex-direction: column;
     display:flex;
+    &__bg-image-cont {
+      height: 711px;
+      max-height: $image-proc-sectionsIMG__max-height-lg;
+      width: 100%;
+    }
+    &__text-cont {
+      max-height:$image-proc-sections__max-height-medium;
+      width: 100%;
+    }
+  }
+  @media (min-width: 1024px) {
+    &__text-cont {
+      justify-content: center;
+      max-height: $image-proc-sectionsTEXT__max-height-lg;
+      .title {
+        font-size: 44px;
+        line-height: 44px;
+      }
+      .subtitle {
+        font-size: 20px;
+      }
+      .list__item {
+        line-height: 22px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    &__text-cont {
+      .title {
+        font-size: 46px;
+        line-height: 46px;
+      }
+      .subtitle {
+        font-size: 22px;
+      }
+      .list__item {
+        line-height: 28px;
+      }
+    }
+  }
+  @media (min-width: 1600px) {
+    &__text-cont {
+      justify-content: center;
+      // max-height: 550px;
+      .title {
+        font-size: 54px;
+        line-height: 54px;
+      }
+      .subtitle {
+        font-size: 24px;
+      }
+      .list__item {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
   }
 }
 $banner-semantic-horizontal-padding: 35px;
@@ -311,8 +412,8 @@ $banner-semantic-bottom-padding: 40px;
   }
   @include media-breakpoint-up(sm) {
     height: 432px;
-    &__content--wrapper { 
-      align-items: flex-end; 
+    &__content--wrapper {
+      align-items: flex-end;
       header {
         padding-bottom: $banner-semantic-bottom-padding;
       }
