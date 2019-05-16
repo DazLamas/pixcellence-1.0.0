@@ -45,7 +45,7 @@ $left-aligment: 260px;
         line-height: normal;
       }
     }
-  } 
+  }
 }
 
 .banner-cnv-comparison {
@@ -107,23 +107,31 @@ $left-aligment: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
-  .banner-advantages__items-wrapper {
+  &__items-wrapper {
     flex-direction: row;
     display: flex;
     justify-content: space-between;
     // min-width: 49%;
     // max-width: 80%;
   }
-  .banner-advantages__items {
+  &__items {
     // max-width: 155px;
     * {
       display: block;
     }
-    img {
-      height: 60px;
+    .icon {
       margin-bottom: 20px;
+      &.flaticon-battery {
+        margin-left: -12px;
+      }
+      &.flaticon-idea {
+        margin-left: -9px;
+      }
+      &::before {
+        font-size: 60px;
+      }
     }
-    span {
+    .headline {
       font-family: 'Roboto';
       font-weight: 500;
       font-size: 18px;
@@ -132,7 +140,7 @@ $left-aligment: 260px;
       margin-bottom: 20px;
       color: white;
     }
-    p {
+    .body-text {
       font-family: 'Open Sans';
       font-weight: lighter;
       font-size: 16px;
