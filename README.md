@@ -4,10 +4,11 @@
 
 **Technologies:**
 - Boostrap
-- Figma
 - Grid Layout
 - Gulp
+- BEM Notation
 - SASS
 - Git
+- Figma (UX)
 
 *Check it: https://dazlamas.github.io/pixcellence/*
