@@ -2,13 +2,15 @@
 
 *Website development, UX and Design for Pixcellence Inc*
 
-**Technologies:**
+**Technologies & Other:**
 - Boostrap
-- Grid Layout
 - Gulp
-- BEM Notation
 - SASS
 - Git
+- Grid Layout
+- BEM Notation
+- Responsive Image Loading
+- Icon Fonts
 - Figma (UX)
 
 *Check it: https://dazlamas.github.io/pixcellence/*
