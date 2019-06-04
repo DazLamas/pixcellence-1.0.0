@@ -1,6 +1,6 @@
 {
   "name": "pixcellence-website",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Pixcellence Inc. Official Website",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,8 @@
   "author": "Sarah Díaz Lamas",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-clean-css": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-minify": "^3.1.0",
@@ -19,6 +19,8 @@
     "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^4.3.1",
+    "tar": ">=2.2.2",
+    "fstream": ">=1.0.12"
   }
 }

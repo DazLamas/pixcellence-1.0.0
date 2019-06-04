@@ -2,21 +2,22 @@
 
 $menu-width   : 250px;
 $header-height: 60px;
-$logo-height  : 15px;
+$logo-height  : 17px;
+$hamburguer_line-height : 1px;
 
-.menu-header {
+.menu-main-container {
+    transition: background-color 0.4s ease-in;
     display: block;
     position: fixed;
     margin: 0 auto;
     width: 100%;
     max-width: 100%;
     box-shadow: none;
-    background-color: $white;
+    background-color: #ffffff0a;
     position: fixed;
     height: $header-height!important;
     z-index: 10;
 }
-
 .menu-container {
     height: 100%;
     position: fixed;
@@ -24,7 +25,7 @@ $logo-height  : 15px;
     width: $menu-width;
     margin-top: $header-height;
     transform: translateX($menu-width);
-    background: $white;
+    background-color: white;
 }
 .menu{
     margin-top: 40px;
@@ -42,7 +43,7 @@ $logo-height  : 15px;
 .menu__link{
     cursor: pointer;
     list-style: none;
-    color: $black;
+    color: $white;
     font-family: 'open sans';
     font-size: 12px;
     font-weight: bold;
@@ -65,10 +66,10 @@ $logo-height  : 15px;
       display: block;
     }
 }
-
 .menu__logo {
     position: inherit;
     height: $logo-height;
+    width: auto;
     margin-top: ($header-height - $logo-height)/2;
 }
 .menu__button {
@@ -84,7 +85,7 @@ $logo-height  : 15px;
         transition:         all 0.3s; /* IE10+, Firefox 16+, Chrome 36+, Opera 12.10 */
 
     height: auto;
-    width: 22px;
+    width: 21px;
     z-index: 99;
     margin-top: ($header-height - 15px)/2;
     margin-bottom: 0;
@@ -94,27 +95,37 @@ $logo-height  : 15px;
         position: relative;
         transition: all 0.3s;
         box-sizing: border-box;
-        background-color: black;
+        background-color: $white;
         float: left;
-        height: 3px;
+        height: $hamburguer_line-height;
         width: 100%;
         &.middle {
-            margin-top: 3px;
+            margin-top: $hamburguer_line-height * 5;
         }
         &.bottom {
-            margin-top: 3px;
+            margin-top: $hamburguer_line-height * 5;
         }
     }
 }
 .menu-toggle-checkbox {
   display: none;
 }
-
+.menu-main-container:hover {
+  background-color: white;
+  .menu__link {
+    color: $black;
+  }
+  .menu__icon-body .line{
+    background-color: $black;
+  }
+}
 /*
- * Animation
- */
-
+// Animation
+*/
 .menu-animation {//must keep the hierarchy to work
+  &.menu-main-container{
+    background-color: white;
+  }
   .menu-container {
     transition: transform 250ms ease-in-out;
     -webkit-transition: -webkit-transform 250ms ease-in-out; /* Chrome < 26, Safari < 7 */
@@ -125,20 +136,24 @@ $logo-height  : 15px;
   }
   .menu__icon-body {
     .line {
+      background-color: $black;
       &.middle {
         opacity: 0;
       }
       &.top {
         transform: rotate(135deg);
-        margin-top: 8px;
+        margin-top: 9px;
         // top:8px;
       }
       &.bottom {
         transform: rotate(-135deg);
-        margin-top: -9px;
+        margin-top: -7px;
         // top:-4px;
       }
     }
+  }
+  .menu__link {
+    color: $black;
   }
 }
 
@@ -147,7 +162,7 @@ $logo-height  : 15px;
   .menu-toggle--trigger {
     display: none;
   }
-  .menu-header {
+  .menu-main-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -157,6 +172,7 @@ $logo-height  : 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: transparent;
     margin-top: 0;
     width: auto;
     position: absolute;
@@ -174,7 +190,7 @@ $logo-height  : 15px;
     &__item {
       margin-bottom: 0;
       width: auto;
-      margin-right: 20px;
+      margin-right: 35px;
       &--end {
         position: inherit;
         margin-left: 20px;
@@ -182,11 +198,11 @@ $logo-height  : 15px;
     }
     &__link {
       font-family: 'Roboto';
-      font-weight: 300;
-      font-size: 15px;
+      font-weight: 100;
+      font-size: 14px;
       line-height: normal;
-      letter-spacing: 0.03em;
-      color: $gray-600;
+      letter-spacing: 0.05em;
+      color: white;
       text-transform: none;
       margin-top: 7px; //Related
       &-underline {

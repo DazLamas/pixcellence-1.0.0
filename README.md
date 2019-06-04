@@ -10,4 +10,4 @@
 - SASS
 - Git
 
-*Check it: https://dazlamas.github.io/pixcellence/*
+*Check it: https://dazlamas.github.io/pixcellence-demo/*

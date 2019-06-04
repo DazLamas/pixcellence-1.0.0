@@ -1,29 +1,32 @@
 /* _machine-learning.scss */
 .banner-machine-learning {
   width: 100%;
+  // height: 100vh;
   height: 400px;
-  background: url('../img/machine-learning/robot-circle_1920.jpg');
+  background: url('../img/machine-learning/robot-circle_992.jpg');
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/machine-learning/robot-circle_1920.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/machine-learning/robot-circle_1920.jpg', sizingMethod='scale')";
-  .banner__text-cont {
-    margin: 10em 5em 0 5em;
-    .title {
-      font-family: 'Roboto Condensed';
-      font-size: 45px;
-      letter-spacing: .3px;
-      color: #f2f2f2;
-    }
-  }
-  @media (max-width: 780px) {
-    height: 300px;
-  }
-  @media (max-width: 990px) {
+  //Responsive:
+  @media (min-width: 992px) {
     height: 400px;
-  }
-  @media (max-width: 1300px) {
-    height: 400px;
-  }
+    background-image: url('../img/machine-learning/robot-circle_1200.jpg');
+  };
+  @media (min-width: 1200px) {
+    height: 450px;
+    background-image: url('../img/machine-learning/robot-circle_1440.jpg');
+  };
+  @media (min-width: 1440px) {
+    height: 600px;
+    background-image: url('../img/machine-learning/robot-circle_1600.jpg');
+  };
+  @media (min-width: 1600px) {
+    height: 800px;
+    background-image: url('../img/machine-learning/robot-circle_1920.jpg');
+  };
 }
+
+
+
 .banner-characteristics {
   width: 100%;
   background: #03336F;
@@ -48,7 +51,7 @@
   color: white;
   font-family: 'Signika';
   font-size: 45px;
-  line-height: 36px;
+  line-height: 46px;
   margin-bottom: 8px;
 }
 .banner-characteristics__col-1__claim {
