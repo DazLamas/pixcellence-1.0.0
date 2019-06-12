@@ -13,4 +13,4 @@
 - Gulp
 - Figma for UX
 
-*Check it: https://dazlamas.github.io/pixcellence-1.1.0*
+*Check it: https://dazlamas.github.io/pixcellence-2.0.0*
